@@ -4,7 +4,7 @@ import './header.css';
 export default ({}) => {
     return <div className="header-container">
         <header>
-            <img className="logo"></img><p>The World We Want</p>
+            <img className="logo"></img>
             <nav>
                 <ul className="nav-area">
                     <li><a href="#">Facebook</a></li>
