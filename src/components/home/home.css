@@ -1,3 +1,48 @@
 .home-container {
 
 }
+
+.banner-image img{
+    height: 1080px;
+    width: 100%;
+}
+
+
+/* All section css goes here */
+
+/* We are not creating separate file for each secton to reduce number of css files.
+All sections are part of home component hence css for all sections is inside home.css */
+
+/* Global Impact Section */
+
+.global-impact-container {
+    margin: 0rem 5rem 5rem 15rem;
+    color: #181818;
+}
+
+.global-impact-container .title {
+    font-size: 150px;
+    font-weight: 500;
+}
+
+.global-impact-container .title .impact {
+    font-size: 250px;
+    font-weight: 600;
+}
+
+.global-impact-container .subtitle {
+    margin-top: 100px;
+    width: 1485px;
+    height: 415px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: left;
+    color: #181818;
+
+}
+
+.global-impact-container .subtitle .para {
+    margin-bottom: 40px;
+
+}

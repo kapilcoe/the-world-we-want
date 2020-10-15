@@ -1,37 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
-    font-family: sans-serif;
-}
-.header-container{
-    background-image: url('https://www.natgeoexpeditions.com.au//dashboardfile/1596720082_Kirkjufell mountain, Iceland - shutterstock_1452482168.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 651px;
-}
-
-nav {
-    min-height: 10vh;
-    display: flex;
-    justify-content: flex-end ;
-    align-items: center;
+.header-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-   
+    width: 100%;
+    margin-top: 2rem;
 }
+.nav-container { 
+    display: flex;
+}
+
 .logo{
     margin-right: auto;
-    height: 80px;
 }
 .nav-area{
     justify-content: space-around;
-    width: 30%;
+    margin: 0rem;
+    margin-right: 2rem;
 
 }
 .nav-area li  {
@@ -47,10 +30,16 @@ nav {
     color: #ffffff;
   }
 
+.nav-area li a img{
+    height: 30px;
+    width: 30px;
+}
+
 .burger{
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 5px;
+    margin-left: 1rem;
+}
+.burger a img {
+    height: 45px;
+    width: 45px;
 }
   

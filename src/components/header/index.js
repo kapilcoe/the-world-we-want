@@ -1,24 +1,24 @@
 import React from 'react';
 import './header.css';
+import LogoLight from '../../images/horizontal-logo-light.png';
+import FacebookIcon from '../../images/icons/facebook.png';
+import InstagramIcon from '../../images/icons/instagram.png';
+import TwitterIcon from '../../images/icons/twitter.png';
+import HamburgerIcon from '../../images/icons/hamburger.png';
 
 export default ({}) => {
     return <div className="header-container">
-        <nav>
-            <div className="logo">
-                <img  src="https://theworldwewant.global/wp-content/uploads/2019/08/world-we-want-www-logo-retina.jpg"></img>
-            </div>
+            <nav className="nav-container">
+                <div className="logo">
+                    <img src={LogoLight}/>
+                </div>
 
                 <ul className="nav-area">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Insta</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#"><img src={FacebookIcon}/></a></li>
+                    <li><a href="#"><img src={InstagramIcon}/></a></li>
+                    <li><a href="#"><img src={TwitterIcon}/></a></li>
+                    <li class='burger'><a href="#"><img src={HamburgerIcon}/></a></li>
                 </ul>
-            <div className="burger">
-                <div className="line1"></div>
-                <div className="line2"></div>
-                <div className="line3"></div>
-
-            </div>
 
         </nav>
        
