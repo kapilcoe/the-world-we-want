@@ -46,3 +46,82 @@ All sections are part of home component hence css for all sections is inside hom
     margin-bottom: 40px;
 
 }
+
+
+
+
+/* The World We Want CSS Start */
+
+.wrapper h1{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+}
+.wrapper p{
+    text-align: left;
+    font-size: 18px;
+}
+
+.social-post-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-post-area{
+    padding: 0 20px 20px;
+}
+.social-post-area-img{
+    width: 350px;
+    height: 350px;
+}
+
+/* The World We Want CSS End */
+
+
+/* Good News Section CSS Start */
+.news-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.news-area{
+    padding: 0 20px 20px;
+}
+
+.news-img{
+    width: 518px;
+    height: 350px;
+}
+
+/* Good News Section CSS End */
+
+/* What We Do Section CSS Start */
+
+.whatwedo-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.whatwedo-area{
+    padding: 0 20px 20px;
+}
+
+.whatwedo-img{
+    width: 500px;
+    height: 750px;
+}
+
+/* What We Do Section CSS End */
+
+/* Purpose Impact Section CSS Start */
+
+.purpose-impact-container{
+    background-image: url('../../images/purpose_impact.png');
+}
