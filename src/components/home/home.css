@@ -3,7 +3,7 @@
 }
 
 .banner-image img{
-    height: 1080px;
+    height: 100%;
     width: 100%;
 }
 
@@ -16,29 +16,36 @@ All sections are part of home component hence css for all sections is inside hom
 /* Global Impact Section */
 
 .global-impact-container {
-    margin: 0rem 5rem 5rem 15rem;
+    margin: 2rem 5rem 2rem 5rem;
     color: #181818;
+
 }
 
 .global-impact-container .title {
-    font-size: 150px;
-    font-weight: 500;
+    font-size: 120px;
+    font-weight: lighter;
+    font-family: 'Tusker-5700';
+    line-height: 110%;
+
 }
 
 .global-impact-container .title .impact {
-    font-size: 250px;
-    font-weight: 600;
+    font-size: 200px;
+    font-family: 'Tusker-7700';
+    line-height: 110%;
+
 }
 
 .global-impact-container .subtitle {
-    margin-top: 100px;
-    width: 1485px;
-    height: 415px;
-    font-weight: 300;
-    font-size: 48px;
+    margin-top: 80px;
+    margin-right: 100px;
+    font-family: 'URW-WIN-LIGHT';
+    font-weight: normal;
+    font-size: 35px;
     line-height: 52px;
     text-align: left;
     color: #181818;
+    line-height: 110%;
 
 }
 
@@ -124,4 +131,81 @@ All sections are part of home component hence css for all sections is inside hom
 
 .purpose-impact-container{
     background-image: url('../../images/purpose_impact.png');
+}
+
+/* 17 SDGs */
+.sdgs-container {
+    padding: 3rem 5rem 3rem 5rem;
+    background-color: #181818;
+}
+
+.sdgs-container .title {
+    margin-bottom: 5rem;
+    color: #fff;
+    font-size: 90px;
+    font-family: 'Tusker-5500';
+}
+
+.sdgs {
+    display: flex;
+}
+.sdgs .focused-sdg {
+    width: 50%;
+    padding-right: 2%;
+    animation-name: focusedSDG;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+
+.focused-sdg img {
+    width: 100%;
+    height: 697px;
+    object-fit: cover;
+
+}
+
+.focused-sdg .name {
+    font-size: 55px;
+    color: #FFF;
+    font-family: 'Tusker-5500';
+    padding-top: 15px;
+}
+
+.focused-sdg .description {
+    color: #FFF;
+    line-height: 150%;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'URW-WIN-LIGHT';
+}
+
+.sdgs .blurred-sdgs-container {
+    width: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+.sdgs .blurred-sdg {
+    width: 50%;
+    padding-right: 4%;
+}
+
+.blurred-sdg img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.blurred-sdg .name {
+    height: 50px;
+    font-size: 16px;
+    color: #FFF;
+    padding-top: 10px;
+    font-family: 'URW-WIN-LIGHT';
+}
+
+@keyframes focusedSDG {
+    from {opacity:  0%;}
+    to {opacity: 100%;}
 }

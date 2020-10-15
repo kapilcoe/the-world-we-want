@@ -1,6 +1,49 @@
+
+
+@font-face {
+  font-family: 'Tusker-5500';
+  font-display: swap;
+  src: url('./fonts/Lewis\ McGuffie\ Type\ -\ Tusker\ Grotesk\ 5500\ Medium.otf')
+      format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tusker-5700';
+  font-display: swap;
+  src: url('./fonts/Lewis\ McGuffie\ Type\ -\ Tusker\ Grotesk\ 5700\ Bold.otf')
+      format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tusker-7700';
+  font-display: swap;
+  src: url('./fonts/Lewis\ McGuffie\ Type\ -\ Tusker\ Grotesk\ 7700\ Bold.otf')
+      format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tusker-7800';
+  font-display: swap;
+  src: url('./fonts/Lewis\ McGuffie\ Type\ -\ Tusker\ Grotesk\ 7800\ Super.otf')
+      format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'URW-WIN-LIGHT';
+  font-display: swap;
+  src: url('./fonts/URWDIN-Light.ttf')
+      format('woff2');
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Tusker Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

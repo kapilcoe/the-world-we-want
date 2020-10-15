@@ -3,7 +3,7 @@ import React from 'react';
 export default ({}) => {
     return <div className='global-impact-container'>
         <div className='title'>
-            <div>A GLOBAL</div>
+            <div>A GLOBAL SOCIAL</div>
             <div className='impact'>IMPACT</div>
             <div>ENTERPRISE</div>
         </div>
