@@ -108,21 +108,50 @@ All sections are part of home component hence css for all sections is inside hom
 /* Good News Section CSS End */
 
 /* What We Do Section CSS Start */
+.whatwedo-section-container{
+    margin: 10rem 5rem 2rem 5rem;
+}
 
+.whatwedo-section-container .title {
+    font-family: 'Tusker-5500';
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+
+.whatwedo-section-container .description {
+    font-family: 'URW-WIN-LIGHT';
+    font-size: 35px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
 .whatwedo-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .whatwedo-area{
-    padding: 0 20px 20px;
+    width: 47%;
+    padding-right: 3%;
 }
 
 .whatwedo-img{
-    width: 500px;
+    width: 100%;
     height: 750px;
+    object-fit: cover;
+}
+
+.whatwedo-title {
+    background-color: #5d5dec;
+    opacity: 0.8;
+    padding: 30px 10px;
+    font-size: 60px;
+    font-family: 'Tusker-5700';
+    color: #FFF;
+    position: relative;
+    top: -3px;
 }
 
 /* What We Do Section CSS End */
@@ -130,8 +159,38 @@ All sections are part of home component hence css for all sections is inside hom
 /* Purpose Impact Section CSS Start */
 
 .purpose-impact-container{
+    padding: 17rem 5rem 2rem 5rem;
     background-image: url('../../images/purpose_impact.png');
+    font-family: 'Tusker-5500';
+    color: #FFF;
+    position: relative;
 }
+
+.purpose-impact-container .title {
+    font-size: 130px;
+    margin-bottom: 30px;
+}
+.purpose-impact-container .description {
+    font-size: 60px;
+    margin-bottom: 20px;
+    line-height: 105%;
+}
+.purpose-impact-container .pie-container {
+    position: absolute;
+    background-color: #FFF;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    right: 110px;
+    top: 90px;
+    color: black;
+    font-size: 300px;    
+    font-family: 'Tusker-5500';
+
+}
+
+/* purpose impact section css end */
+
 
 /* 17 SDGs */
 .sdgs-container {
@@ -152,9 +211,6 @@ All sections are part of home component hence css for all sections is inside hom
 .sdgs .focused-sdg {
     width: 50%;
     padding-right: 2%;
-    animation-name: focusedSDG;
-    animation-iteration-count: 1;
-    animation-duration: 5s;
 }
 
 .focused-sdg img {
@@ -205,7 +261,55 @@ All sections are part of home component hence css for all sections is inside hom
     font-family: 'URW-WIN-LIGHT';
 }
 
-@keyframes focusedSDG {
-    from {opacity:  0%;}
-    to {opacity: 100%;}
+/* sdgs css end */
+
+
+/* our work css start */
+.our-work {
+    margin: 6rem 5rem 12rem 5rem;
+}
+
+.our-work .title {
+    margin-bottom: 6rem;
+    font-family: 'Tusker-5500';
+    font-size: 80px;
+}
+
+.our-work-tiles .tile {
+    position: relative;
+    margin-bottom: 4rem;
+    color: #FFF;
+}
+
+.our-work-tiles .tile img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.our-work-tiles .tile .tile-text {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 20px;
+}
+.our-work-tiles .tile .work-title-1 {
+    font-family: 'Tusker-5500';
+    font-size: 90px;
+    line-height: 100%;
+    font-weight: lighter;
+}
+
+.our-work-tiles .tile .work-title-2 {
+    font-family: 'Tusker-7700';
+    font-size: 100px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    max-width: 900px;
+    
+}
+
+.our-work-tiles .tile .work-description {
+    max-width: 400px;
+    font-family: 'URW-WIN-LIGHT';
+    margin-bottom: 10px;
 }

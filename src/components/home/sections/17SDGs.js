@@ -51,7 +51,7 @@ const FocusedSDG = ({sdg }) => {
 }
 
 const BlurredSDG = ({sdg,onHover}) => {
-    return <div className='blurred-sdg' onMouseEnter={onHover}><img src={sdg.greyscaleSrc}/>
+    return <div className='blurred-sdg' ><img onMouseEnter={()=>{}} src={sdg.greyscaleSrc}/>
     <div className='name'>{sdg.title}</div>
     <div style={{height: '3px', width:'102%', 'background-color': `${sdg.color}`, 'margin-left': '-1%'}}></div>
     </div>
