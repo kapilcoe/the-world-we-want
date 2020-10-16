@@ -59,50 +59,90 @@ All sections are part of home component hence css for all sections is inside hom
 
 /* The World We Want CSS Start */
 
-.wrapper h1{
-    text-align: left;
-    font-size: 30px;
-    font-weight: 400;
+
+.world-wewant-container{
+    margin: 10rem 5rem 2rem 5rem;
 }
-.wrapper p{
+
+.world-wewant-container .world-title{
     text-align: left;
-    font-size: 18px;
+    font-family: 'Tusker-5500';
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+.world-wewant-container .world-description{
+    font-family: 'URW-WIN-LIGHT';
+    font-size: 35px;
+    margin-right: 100px;
+    /* margin-bottom: 50px; */
 }
 
 .social-post-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
 }
 
 .social-post-area{
-    padding: 0 20px 20px;
+    width: 30%;
+    padding-right: 3%;
+    padding-top: 70px;
 }
 .social-post-area-img{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
 }
 
 /* The World We Want CSS End */
 
 
 /* Good News Section CSS Start */
+
+.news-section-container{
+    margin: 10rem 5rem 2rem 5rem;
+}
+
+.news-section-container .news-header{
+    text-align: left;
+    font-family: 'Tusker-5500';
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+
 .news-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.news-area{
-    padding: 0 20px 20px;
+    align-items: flex-start;
+    /* justify-content: center; */
 }
 
+.news-area{
+    width: 30%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+}
 .news-img{
-    width: 518px;
-    height: 350px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.news-area .news-title{
+    text-align: left;
+    font-family: 'Tusker-5500';
+    font-size: 80px;
+    /* margin-bottom: 50px; */
+}
+
+.news-area .news-description{
+    font-family: 'URW-WIN-LIGHT';
+    font-size: 32px;
+    /* margin-right: 100px;
+    margin-bottom: 50px; */
 }
 
 /* Good News Section CSS End */
