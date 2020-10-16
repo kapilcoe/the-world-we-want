@@ -5,20 +5,21 @@ import news_2 from '../../../images/news_2.png';
 
 export default ({}) => {
     return <div class='news-section-container'>
-        <div className="wrapper"><h1>GOOD NEWS</h1>
+        <div className="news-header">GOOD NEWS</div>
             <div className="news-container">
                 <div className="news-area">
                     <img className="news-img" src={news_1}></img>
-                    <div className="news-title"><h1>Title</h1><p>Lwcvferjhfe</p></div>
+                    <div className="news-title">Title</div>
+                    <div className="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     
                 </div>
                 <div className="news-area">
                     <img className="news-img"  src={news_2}></img>
-                    <div className="news-title"><h1>Title</h1><p>Lwcvferjhfe</p></div>
+                    <div className="news-title">Title</div>
+                    <div className="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     
                 </div>
             </div>
-        </div>
 
     </div>
 }
