@@ -128,7 +128,6 @@ All sections are part of home component hence css for all sections is inside hom
 }
 .news-img{
     width: 100%;
-    height: 250px;
     object-fit: cover;
 }
 .news-area .news-title{

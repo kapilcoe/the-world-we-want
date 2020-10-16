@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSpring, animated } from 'react-spring';
 import './header.css';
 import LogoLight from '../../images/horizontal-logo-light.png';
 import FacebookIcon from '../../images/icons/facebook.png';
@@ -7,11 +8,13 @@ import TwitterIcon from '../../images/icons/twitter.png';
 import HamburgerIcon from '../../images/icons/hamburger.png';
 
 export default ({}) => {
+    const logoProps = useSpring({from:{x:0}, x: 1});
     return <div className="header-container">
             <nav className="nav-container">
-                <div className="logo">
+                <animated.div className="logo"
+                >
                     <img src={LogoLight}/>
-                </div>
+                </animated.div>
 
                 <ul className="nav-area">
                     <li><a href="#"><img src={FacebookIcon}/></a></li>

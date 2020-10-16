@@ -7,6 +7,7 @@ import GoodNews from './sections/GoodNews';
 import WorldWeWant from './sections/WorldWeWant';
 import WhatWeDo from './sections/WhatWeDo';
 import PurposeImpact from './sections/PurposeImpact';
+import SectionLoader from '../SectionsLoader';
 import './home.css';
 export default ({}) => {
     return <div className="home-container">
