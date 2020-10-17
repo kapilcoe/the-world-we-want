@@ -1,5 +1,6 @@
 .home-container {
-
+    position: relative;
+    background: white;
 }
 
 .banner-image img{
@@ -90,7 +91,12 @@ All sections are part of home component hence css for all sections is inside hom
     width: 30%;
     padding-right: 3%;
     padding-top: 70px;
+    transition: 1s;
 }
+.social-post-area:hover{
+  transform: scale(1.1);
+}
+
 .social-post-area-img{
     width: 100%;
     height: 25%;
@@ -352,3 +358,78 @@ All sections are part of home component hence css for all sections is inside hom
     font-family: 'URW-WIN-LIGHT';
     margin-bottom: 10px;
 }
+
+
+
+
+/* Animation effect */
+.gradient-effect{
+    background-color: #0a2096;
+    background-image: linear-gradient(159deg, #0a2096 0%, #09088e 17%, #dc3e25 40%, #059427 60%, #d4d23c 75%, #9a0c8b 90%);
+    border-radius: 30%;
+    transition: 0.5s all;
+    color: #fff;
+
+}
+
+/* .social-post-area:hover{
+    background-position: 100% 100%;
+    background: linear-gradient(159deg, #0a2096 0%, #09088e 17%, #dc3e25 40%, #059427 60%, #d4d23c 75%, #9a0c8b 90%);
+    border-radius: 10%;
+    transition: 0.2s all;
+    background-position: 100% 100%;
+    position: relative;
+    background-size: 400% 400%;
+    animation: rotate 1.8s linear infinite;
+} */
+
+/* .social-post-area:hover .effect-1,
+.social-post-area:hover .effect-2 {
+  display: block;
+} */
+
+
+.effect-1,.effect-2 {
+  border-radius: 10%;
+  display: none;
+  mix-blend-mode: multiply;
+  height: 50%;
+  opacity: 1;
+  position: absolute;
+  width: 30%;
+  z-index: 3000;
+}
+
+.effect-1 {
+  animation: rotate 1.8s linear infinite;
+  background: cyan;
+ 
+}
+
+.effect-2 {
+   animation: rotate 1.2s linear reverse infinite;
+   background: #e7a9ff;
+}
+@keyframes rotate {
+    0% {
+      top: 0;
+      left: 8%;
+    }
+    25% {
+      top: 8%;
+      left: 0%;
+    }
+    50% {
+      top: 16%;
+      left: 8%;
+    }
+    75% {
+      top: 8%;
+      left: 16%;
+    }
+    100% {
+      top: 0;
+      left: 8%;
+    }
+  }
+  
