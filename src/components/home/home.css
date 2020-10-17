@@ -368,7 +368,7 @@ transform: scale(1.5);
     
 }
 .whatwedo-area-r{
-    transform: translateX(50%);
+    transform: translateX(-50%);
 }
 .whatwedo-area-l{
     transform: translateX(-50%);
