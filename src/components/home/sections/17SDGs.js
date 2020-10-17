@@ -28,11 +28,11 @@ export default ({}) => {
         <div className='sdgs'>
             
             {
-                <FocusedSDG
-                    sdg={SDGs[selectedSDG]}
-                />
+                SDGs.map(sdg => <FocusedSDG
+                    sdg={sdg}
+                />)
             }
-            <div className='blurred-sdgs-container'>
+            {/* <div className='blurred-sdgs-container'>
                 {blurredSDGS.map((sdg, idx) => {
                     return <BlurredSDG
                         key={idx}
@@ -41,7 +41,7 @@ export default ({}) => {
 
                     />
                 })}
-                </div>
+                </div> */}
             
         
         </div>

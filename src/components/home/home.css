@@ -22,6 +22,7 @@
     position: absolute;
     width: 100%;
     transform: translate(-50%);
+    object-fit: cover;
 }
 
 /* All section css goes here */
@@ -460,9 +461,19 @@ transform: scale(1.5);
 .sdgs {
     display: flex;
 }
+
 .sdgs .focused-sdg {
-    width: 50%;
-    padding-right: 2%;
+    flex-basis: 33%;
+    padding-right: 20px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+.sdgs:hover .focused-sdg {
+    flex-basis: 20%;
+}
+.sdgs:hover .focused-sdg:hover {
+    flex-basis: 60%;
 }
 
 .focused-sdg img {
@@ -710,3 +721,46 @@ transform: scale(1.5);
 }
 
 
+
+/* loader css */
+.list {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+      segoe ui, arial, sans-serif;
+    width: 65ch !important;
+    height: 100%;
+  }
+  
+  .card {
+    position: absolute;
+    will-change: transform, height, opacity;
+    width: 100%;
+  }
+  
+  .cell {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .details {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+  }
+  

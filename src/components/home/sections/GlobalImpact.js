@@ -1,19 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionsLoader from '../../SectionsLoader';
-import {useSpring, animated} from 'react-spring';
+import {animated, useSpring} from 'react-spring';
+import {useInterval} from '../../../utils';
 
 export default ({}) => {
     const [loaded, setIsLoaded] = useState(false);
-    const loadingProps = useSpring({
-        from: {
-            opacity: loaded? 0: 1
-        },
-        opacity: loaded ? 1: 0
-    }, [loaded]);
+    const [show, set] = useState(false)
+    useInterval(() => set(!show), 400);
+    const transitions = useSpring({
+        from: {  transform: show ? 'scale(1.05)' : 'scale(1)', color: show ? 'orange' : 'blue'},
+        transform: !show ? 'scale(1.05)' : 'scale(1)',
+        color: !show ? 'orange' : 'blue'
+    }, [show])
+
+
+
     return <SectionsLoader callback={setIsLoaded}><animated.div  className='global-impact-container'>
         <div className='title'>
             <div>A GLOBAL SOCIAL</div>
-            <div className='impact'>IMPACT</div>
+            {
+                
+                <animated.div style={transitions} className='impact'>IMPACT</animated.div>
+            }
             <div>ENTERPRISE</div>
         </div>
         <div className='subtitle'>

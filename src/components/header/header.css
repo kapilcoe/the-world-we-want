@@ -38,9 +38,53 @@
 
 .burger{
     margin-left: 1rem;
+    cursor: pointer;
 }
 .burger a img {
     height: 45px;
     width: 45px;
 }
   
+
+.side-menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    background-color: #F86445;
+    right: -100vw;
+    top: 0px;
+    overflow-y: scroll;
+}
+
+.side-menu-items-container {
+    font-size: 80px;
+    font-family: 'Tusker-7700';
+    line-height: 110%;
+    color: #FFF;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.side-menu-item {
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.sidebar-subtitles-container {
+
+}
+
+.sidebar-subtitle {
+    font-size: 50px;
+    font-family: 'Tusker-5700';
+    line-height: 110%;
+    color: #FFF;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.side-menu-item a, a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
