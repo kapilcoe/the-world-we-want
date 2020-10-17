@@ -531,19 +531,38 @@ transform: scale(1.5);
     position: relative;
     margin-bottom: 4rem;
     color: #FFF;
+
 }
+
 
 .our-work-tiles .tile img {
     height: 600px;
     width: 100%;
     object-fit: cover;
+    transition: opacity 400ms ease-in ,transform 800ms ease-in;
+    opacity: 0;
+    transform: translateX(-50%);
 }
+.our-work-tiles .tile.is-visible img {
+    opacity: 1;
+    transform:translateX(0)
+}
+
 
 .our-work-tiles .tile .tile-text {
     position: absolute;
     bottom: 20px;
     margin-left: 20px;
+    opacity: 0;
+    transition: opacity 400ms ease-in ,transform 800ms ease-in;
+    opacity: 0;
+    transform: translateX(50%);
 }
+.our-work-tiles .tile .tile-text.is-visible{
+    opacity: 1;
+    transform:translateX(0)
+}
+
 .our-work-tiles .tile .work-title-1 {
     font-family: 'Tusker-5500';
     font-size: 90px;

@@ -23,13 +23,13 @@ const Work = ({work}) => {
         opacity: loaded ? 1: 0
     }, [loaded]);
 
-    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  className='tile'>
+    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  className='tile show-on-scroll'>
                                         <img height='600px' src={work.src}/>
-                            <div className='tile-text'>
+                            <div className='tile-text show-on-scroll'>
                             {
                                 work.title1 && <div className='work-title-1'>{work.title1}</div>
                             }
-                            <div className='work-title-2'>{work.title2}</div>
+                            <div className='work-title-2 '>{work.title2}</div>
                             <div className='work-description'>{work.descripton}</div>
                             </div>
                 
