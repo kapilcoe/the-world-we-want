@@ -10,7 +10,7 @@ export default ({}) => {
         },
         opacity: loaded ? 1: 0
     }, [loaded]);
-    return <SectionsLoader callback={setIsLoaded}><animated.div style={loadingProps} className='global-impact-container'>
+    return <SectionsLoader callback={setIsLoaded}><animated.div  className='global-impact-container'>
         <div className='title'>
             <div>A GLOBAL SOCIAL</div>
             <div className='impact'>IMPACT</div>

@@ -17,9 +17,9 @@ export default ({}) => {
                 <p>London </p>
                 <p>SW7 4DE</p>
                 <div className="social-footer">
-                    <li><a href="#"><img src={FacebookIcon}/></a></li>
-                    <li><a href="#"><img src={InstagramIcon}/></a></li>
-                    <li><a href="#"><img src={TwitterIcon}/></a></li>
+                    <li><a href="https://www.facebook.com/www.theworldwewant/" target='_blank'><img src={FacebookIcon}/></a></li>
+                    <li><a href="https://www.instagram.com/the_worldwewant/?hl=en" target='_blank'><img src={InstagramIcon}/></a></li>
+                    <li><a href="https://twitter.com/The_WorldWeWant" target='_blank'><img src={TwitterIcon}/></a></li>
                 </div>
             </div>
             <div className="menu-footer">

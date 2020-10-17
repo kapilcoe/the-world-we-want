@@ -10,7 +10,7 @@ export default ({}) => {
     const loadingProps = useSpring({
         opacity: loaded ? 1: 0
     }, [loaded]);
-    return <SectionsLoader threshold = {0.4} callback={setIsLoaded}><animated.div style={loadingProps} className='purpose-impact-container'>
+    return <SectionsLoader threshold = {0.4} callback={setIsLoaded}><animated.div  className='purpose-impact-container'>
         <div className='title'>
             PURPOSE + IMPACT
         </div>

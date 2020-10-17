@@ -23,7 +23,7 @@ const Work = ({work}) => {
         opacity: loaded ? 1: 0
     }, [loaded]);
 
-    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div style={loadingProps} className='tile'>
+    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  className='tile'>
                                         <img height='600px' src={work.src}/>
                             <div className='tile-text'>
                             {

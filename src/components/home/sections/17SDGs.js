@@ -21,7 +21,7 @@ export default ({}) => {
         setSelectedSDG(hoveredSDGIndex);
     };
     console.log('rendering 17 SDGs');
-    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div style={loadingProps} class='sdgs-container'>
+    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  class='sdgs-container'>
         <div className='title'>
             THE 17 SDGS
         </div>

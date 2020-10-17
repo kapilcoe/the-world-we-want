@@ -13,7 +13,6 @@ import WaveSection from './sections/WaveSection';
 export default ({}) => {
     return <div className="home-container">
             <HeroBanner/>
-            <WaveSection/>
             <GlobalImpact/>
             <SDGs/>
             <OurWork/>
