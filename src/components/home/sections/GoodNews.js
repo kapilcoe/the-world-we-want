@@ -6,7 +6,7 @@ import news_2 from '../../../images/news_2.png';
 
 export default ({}) => {
     return <div class='news-section-container'>
-        <div className="news-header">GOOD NEWS</div>
+        <div className="news-header show-on-scroll">GOOD NEWS</div>
             <div className="news-container">
                 <div className="news-area">
                     <img height="250px" className="news-img" src={news_1}></img>
