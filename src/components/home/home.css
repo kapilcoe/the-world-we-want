@@ -1,12 +1,28 @@
 .home-container {
+    position: relative;
+    background: white;
+}
 
+/* .banner-image img{
+    height: 100%;
+    width: 100%;
+} */
+
+.banner-image{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 800px;
 }
 
 .banner-image img{
     height: 100%;
+    top: 0;
+    left: 50%;
+    position: absolute;
     width: 100%;
+    transform: translate(-50%);
 }
-
 
 /* All section css goes here */
 
@@ -73,7 +89,8 @@ All sections are part of home component hence css for all sections is inside hom
 .world-wewant-container .world-description{
     font-family: 'URW-WIN-LIGHT';
     font-size: 35px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+    margin: 0rem 0rem 3rem 0rem;
     /* margin-bottom: 50px; */
 }
 
@@ -86,11 +103,73 @@ All sections are part of home component hence css for all sections is inside hom
     position: relative;
 }
 
-.social-post-area{
+/* .social-post-area{
     width: 30%;
-    padding-right: 3%;
-    padding-top: 70px;
+    margin-bottom: 3rem;
+    transition: 1s;
+    float: left;
+    box-shadow: 5px 5px 15px #000;
+    position: relative;
+    display: block;
+    background: #222859;
+} */
+
+.social-post-area{
+    width: 29%;
+    height: auto;
+    float: left;
+    box-shadow: 10px 10px 17px grey;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0rem 0rem 6rem 0rem;
+    /* background: #222859; */
 }
+/* .social-post-area:hover{
+  transform: scale(1.1);
+  z-index: 2;
+  box-shadow: 5px 5px 20px #152810;
+} */
+
+.social-post-area:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+.social-post-area:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+.social-post-area:hover:before {
+    border-color: #D04F81;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+.social-post-area:hover:after {
+    border-color: #D04F81;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear .3s, .3s height linear .5s;
+}
+
 .social-post-area-img{
     width: 100%;
     height: 25%;
@@ -128,8 +207,14 @@ All sections are part of home component hence css for all sections is inside hom
 }
 .news-img{
     width: 100%;
+    transition: transform 0.5s ease;
     object-fit: cover;
 }
+
+.news-area:hover img{
+transform: scale(1.5);
+}
+
 .news-area .news-title{
     text-align: left;
     font-family: 'Tusker-5500';
@@ -352,3 +437,129 @@ All sections are part of home component hence css for all sections is inside hom
     font-family: 'URW-WIN-LIGHT';
     margin-bottom: 10px;
 }
+
+
+
+
+/* Animation effect */
+.gradient-effect{
+    background-color: #0a2096;
+    background-image: linear-gradient(159deg, #0a2096 0%, #09088e 17%, #dc3e25 40%, #059427 60%, #d4d23c 75%, #9a0c8b 90%);
+    border-radius: 30%;
+    transition: 0.5s all;
+    color: #fff;
+
+}
+
+/* .social-post-area:hover{
+    background-position: 100% 100%;
+    background: linear-gradient(159deg, #0a2096 0%, #09088e 17%, #dc3e25 40%, #059427 60%, #d4d23c 75%, #9a0c8b 90%);
+    border-radius: 10%;
+    transition: 0.2s all;
+    background-position: 100% 100%;
+    position: relative;
+    background-size: 400% 400%;
+    animation: rotate 1.8s linear infinite;
+} */
+
+/* .social-post-area:hover .effect-1,
+.social-post-area:hover .effect-2 {
+  display: block;
+} */
+
+
+.effect-1,.effect-2 {
+  border-radius: 10%;
+  display: none;
+  mix-blend-mode: multiply;
+  height: 50%;
+  opacity: 1;
+  position: absolute;
+  width: 30%;
+  z-index: 3000;
+}
+
+.effect-1 {
+  animation: rotate 1.8s linear infinite;
+  background: cyan;
+ 
+}
+
+.effect-2 {
+   animation: rotate 1.2s linear reverse infinite;
+   background: #e7a9ff;
+}
+/* @keyframes rotate {
+    0% {
+      top: 0;
+      left: 8%;
+    }
+    25% {
+      top: 8%;
+      left: 0%;
+    }
+    50% {
+      top: 16%;
+      left: 8%;
+    }
+    75% {
+      top: 8%;
+      left: 16%;
+    }
+    100% {
+      top: 0;
+      left: 8%;
+    }
+  } */
+  
+  @keyframes rotate {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.5);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+  }
+  
+
+.wave1{
+    background-image: url('../../images/border-img/1.png');
+    background-size: 50% 80px;
+}
+.wave2{
+    background-image: url('../../images/border-img/2.png');
+    background-size: 50% 100px;
+    animation: 12s linear infinite ;
+}
+.wave3{
+    background-image: url('../../images/border-img/3.png');
+    background-size: 50% 80%;
+    animation: 18s linear infinite ;
+}
+
+.line-1{
+    z-index: 15;
+    opacity: 0.5;
+}
+.line-2{
+    z-index: 10;
+    opacity: 0.7;
+}
+.line-3{
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+

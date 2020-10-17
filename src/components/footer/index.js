@@ -1,23 +1,28 @@
 import React from 'react';
 import './footer.css';
-
+import FacebookIcon from '../../images/icons/facebook.png';
+import InstagramIcon from '../../images/icons/instagram.png';
+import TwitterIcon from '../../images/icons/twitter.png';
 export default ({}) => {
     return <div className="footer-container">
-        <footer class="footer">
-            <div class="l-footer">
-                <h1>Want to Change the world with us?</h1>
+        <footer className="footer">
+            <div className="l-footer">
+                <div className="f-title">Want to Change the world with us?</div>
                 <p>hello@theworldwewant.com</p>
+                <div className="subscribe-form"><form><input type="text" placeholder="Email Address"></input><button className="button"><span>Subscribe to Newsletter</span></button></form></div>
             </div>
-            <div class="r-footer">
-                <h1>Find us here</h1>
-                <p>12 AST London</p>
-                <div class="social-footer">
-                    <a href="#"><span class="fa fa-facebook">Facebook</span></a>
-                    <a href="#"><span class="fa fa-twitter">Twitter</span></a>
-                    <a href="#"><span class="fa fa-insta">Instagram</span></a>
+            <div className="r-footer">
+                <div className="r-footer-title">Find us here</div>
+                <p>12 Astwood Mews</p>
+                <p>London </p>
+                <p>SW7 4DE</p>
+                <div className="social-footer">
+                    <li><a href="#"><img src={FacebookIcon}/></a></li>
+                    <li><a href="#"><img src={InstagramIcon}/></a></li>
+                    <li><a href="#"><img src={TwitterIcon}/></a></li>
                 </div>
             </div>
-            <div class="menu-footer">
+            <div className="menu-footer">
             <ul className="footer-nav">
                 <li><a href="">Who We are</a></li>
                 <li><a href="">17 SDGs</a></li>
@@ -30,10 +35,10 @@ export default ({}) => {
                 
             </ul>
             </div>
-
-            <div class="b-footer">
-            <p>All rights reserved by ©CompanyName 2020 </p>
+            </footer>
+            <div className="b-footer">
+                <p>The world We want copyrights</p>
             </div>
-        </footer>
+        
     </div>
 }
