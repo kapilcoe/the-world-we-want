@@ -1,9 +1,9 @@
-.footer-container{
+/* .footer-container{
     position: -webkit-sticky;
     position: sticky;
     z-index: -1;
     bottom: 0;
-}
+} */
 
 .footer {
 display: flex;
