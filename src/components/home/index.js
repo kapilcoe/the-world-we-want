@@ -9,9 +9,11 @@ import WhatWeDo from './sections/WhatWeDo';
 import PurposeImpact from './sections/PurposeImpact';
 import SectionLoader from '../SectionsLoader';
 import './home.css';
+import WaveSection from './sections/WaveSection';
 export default ({}) => {
     return <div className="home-container">
             <HeroBanner/>
+            <WaveSection/>
             <GlobalImpact/>
             <SDGs/>
             <OurWork/>
