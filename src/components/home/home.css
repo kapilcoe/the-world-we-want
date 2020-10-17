@@ -205,15 +205,11 @@ All sections are part of home component hence css for all sections is inside hom
     padding-right: 3%;
     padding-bottom: 5%;
 }
-.news-img{
-    width: 100%;
-    transition: transform 0.5s ease;
-    object-fit: cover;
-}
 
-.news-area:hover img{
+
+/* .news-area:hover img{
 transform: scale(1.5);
-}
+} */
 
 .news-area .news-title{
     text-align: left;
@@ -229,7 +225,68 @@ transform: scale(1.5);
     margin-bottom: 50px; */
 }
 
+
+.news-area img{
+    border: 1px solid #d2d2d2;
+    padding: 3px;
+    box-shadow: 0 0 5px #333;
+   
+}
+
+/* .news-area{
+    max-width: 210px;
+    max-height: 210px;
+    margin: 50px;     
+} */
+/* .news-img{
+    width: 100%;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+} */
+.news-img{
+    /* width: 100%; */
+    background: #fff;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;    
+}
+.news-img:nth:child(1){
+    z-index: 3;
+}
+.news-img:nth-child(2){
+    z-index: 1;
+}
+.news-img:nth-child(3){
+    z-index: 2;
+}
+.news-area:hover .news-img:nth-child(1)
+{
+    -webkit-transform: rotate(15deg);
+     transform: rotate(15deg);
+    -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+
+.news-area:hover .news-img:nth-child(2){
+    -webkit-transform: rotate(7deg);
+     transform: rotate(7deg);
+    -webkit-transition: all 0.10s ease;
+     transition: all 0.10s ease;
+}
+
+.news-area:hover .news-img:nth-child(3){
+    -webkit-transform: rotate(-5deg);
+     transform: rotate(-5deg);
+}
+
+.news-content{
+    padding-top: 18rem;
+}
+
 /* Good News Section CSS End */
+
 
 /* What We Do Section CSS Start */
 .whatwedo-section-container{
@@ -253,18 +310,29 @@ transform: scale(1.5);
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
 }
 .whatwedo-area{
     width: 47%;
-    padding-right: 3%;
+    transform-style: preserve-3d;
+}
+/* .whatwedo-area:hover{
+   box-shadow: 0rem 1rem 2rem rgba(0,0,0,.2);
+} */
+.whatwedo-area:hover .whatwedo-title{
+    box-shadow: 0rem 1rem 2rem rgba(0,0,0,.2);
+    top: -38px;
+    transform: translateZ(48px) scaleY(1);
+    transform-origin: top;
+    margin: -1rem 2rem 0rem 2rem;
 }
 
 .whatwedo-img{
     width: 100%;
     height: 750px;
     object-fit: cover;
+    transform-style: preserve-3d;
 }
 
 .whatwedo-title {
@@ -276,6 +344,7 @@ transform: scale(1.5);
     color: #FFF;
     position: relative;
     top: -3px;
+    transform-style: preserve-3d;
 }
 
 /* What We Do Section CSS End */
