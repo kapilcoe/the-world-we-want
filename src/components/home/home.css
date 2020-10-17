@@ -118,13 +118,13 @@ All sections are part of home component hence css for all sections is inside hom
     width: 29%;
     height: auto;
     float: left;
-    /* box-shadow: 5px 5px 15px #000; */
+    box-shadow: 10px 10px 17px grey;
     position: relative;
     display: block;
     overflow: hidden;
     padding: 15px;
     text-align: center;
-    margin: 0 5px;
+    margin: 0rem 0rem 6rem 0rem;
     /* background: #222859; */
 }
 /* .social-post-area:hover{
