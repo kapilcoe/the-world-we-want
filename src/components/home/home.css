@@ -291,7 +291,7 @@ All sections are part of home component hence css for all sections is inside hom
 /* Good News Section CSS Start */
 
 .news-section-container{
-    margin: 1rem 5rem 2rem 5rem;
+    margin: 6rem 5rem 3rem 5rem;
 }
 
 .news-section-container .news-header{
@@ -320,9 +320,9 @@ All sections are part of home component hence css for all sections is inside hom
 }
 
 .news-area{
-    width: 30%;
-    padding-right: 3%;
+    width: 540px;
     padding-bottom: 5%;
+    margin-right: 10px;
 }
 
 
@@ -340,10 +340,11 @@ transform: scale(1.5);
 }
 
 .news-area .news-description{
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-LIGHT';
     font-size: 32px;
     line-height: 36px;
     letter-spacing: 0px;
+    margin-top: 30px;
     /* margin-right: 100px;
     margin-bottom: 50px; */
 }
@@ -351,7 +352,7 @@ transform: scale(1.5);
 
 .news-area img{
     padding: 3px;
-    /* box-shadow: 0 0 5px #333; */
+
    
 }
 
@@ -368,11 +369,11 @@ transform: scale(1.5);
 .news-img{
     /* width: 100%; */
     background: #fff;
-    position: absolute;
     -webkit-transition: all 0.2s ease;
      transition: all 0.2s ease;
     backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;    
+    -webkit-backface-visibility:hidden; 
+    object-fit: cover;   
 }
 .news-img:nth:child(1){
     z-index: 3;
@@ -404,7 +405,7 @@ transform: scale(1.5);
 } */
 
 .news-content{
-    padding-top: 18rem;
+    padding-top: 2rem;
 }
 
 /* Good News Section CSS End */
