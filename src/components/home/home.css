@@ -373,7 +373,6 @@ transform: scale(1.5);
      transition: all 0.2s ease;
     backface-visibility:hidden;
     -webkit-backface-visibility:hidden; 
-    object-fit: cover;   
 }
 .news-img:nth:child(1){
     z-index: 3;
