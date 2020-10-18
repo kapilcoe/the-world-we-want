@@ -40,6 +40,37 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'URW-WIN-REGULAR';
+  font-display: swap;
+  src: url('./fonts/URWDIN-Regular.ttf')
+      format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'URW-WIN-MEDIUM';
+  font-display: swap;
+  src: url('./fonts/URWDIN-Medium.ttf')
+      format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'URW-WIN-BLACK';
+  font-display: swap;
+  src: url('./fonts/URWDIN-Black.ttf')
+      format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DRUK-BOLD';
+  font-display: swap;
+  src: url('./fonts/Druk\ Bold\ Regular.ttf')
+      format('woff2');
+  font-style: normal;
+}
 
 body {
   margin: 0;
