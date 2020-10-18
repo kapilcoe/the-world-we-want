@@ -134,7 +134,8 @@ column-gap: 1.25em;
 .menu-footer{
     margin-right: 4rem;
     border-top: 2px solid;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 2rem 0rem; 
+    display: none;
 }
 .menu-footer .footer-nav li a{
    color: white;

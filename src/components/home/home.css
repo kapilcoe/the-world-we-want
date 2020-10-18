@@ -39,16 +39,16 @@ All sections are part of home component hence css for all sections is inside hom
 }
 
 .global-impact-container .title {
-    font-size: 120px;
+    font-size: 150px;
     font-weight: lighter;
-    font-family: 'Tusker-5700';
+    font-family: 'Tusker-5700BOLD';
     line-height: 110%;
 
 }
 
 .global-impact-container .title .impact {
-    font-size: 200px;
-    font-family: 'Tusker-7700';
+    font-size: 250px;
+    font-family: 'Tusker-7700BOLD';
     line-height: 110%;
 
 }
@@ -58,7 +58,7 @@ All sections are part of home component hence css for all sections is inside hom
     margin-right: 100px;
     font-family: 'URW-WIN-LIGHT';
     font-weight: normal;
-    font-size: 35px;
+    font-size: 48px;
     line-height: 52px;
     text-align: left;
     color: #181818;
@@ -84,7 +84,7 @@ All sections are part of home component hence css for all sections is inside hom
 
 .world-wewant-container .world-title{
     text-align: left;
-    font-family: 'Tusker-5500';
+    font-family: 'Tusker Grotesk 5500 MEDIUM';
     font-size: 90px;
     margin-bottom: 50px;
     opacity: 0;
@@ -96,8 +96,8 @@ All sections are part of home component hence css for all sections is inside hom
     transform: translate(0, 0);
 }
 .world-wewant-container .world-description{
-    font-family: 'URW-WIN-LIGHT';
-    font-size: 35px;
+    font-family: 'URW-DIN-REGULAR';
+    font-size: 48px;
     /* margin-right: 100px; */
     margin: 0rem 0rem 3rem 0rem;
     /* margin-bottom: 50px; */
@@ -134,11 +134,11 @@ All sections are part of home component hence css for all sections is inside hom
     width: 29%;
     height: auto;
     float: left;
-    box-shadow: 10px 10px 17px grey;
+    /* box-shadow: 10px 10px 17px grey; */
     position: relative;
-    display: block;
+    display: inline-block;
     overflow: hidden;
-    padding: 15px;
+    /* padding: 15px; */
     text-align: center;
     margin: 0rem 0rem 6rem 0rem;
     /* background: #222859; */
@@ -149,7 +149,7 @@ All sections are part of home component hence css for all sections is inside hom
   box-shadow: 5px 5px 20px #152810;
 } */
 
-.social-post-area:before {
+/* .social-post-area:before {
     position: absolute;
     content: '';
     left: 0;
@@ -174,41 +174,84 @@ All sections are part of home component hence css for all sections is inside hom
     transform: translateX(-100%);
 }
 .social-post-area:hover:before {
-    border-color: #D04F81;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
+    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
 }
 .social-post-area:hover:after {
-    border-color: #D04F81;
     height: 100%;
     transform: translateX(0);
-    transition: .3s transform linear .3s, .3s height linear .5s;
-}
+    transition: transform .3s linear,height .3s linear .3s;
+    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+} */
 
 .social-post-area-img{
     width: 100%;
     height: 25%;
-    object-fit: cover;
-    transition: opacity 400ms ease-in ,transform 800ms ease-in;
-    opacity: 0;
-    transform: translateX(-50%);
+    /* object-fit: cover; */
+    transition: transform .8s;
+    /* opacity: 0; */
+    /* transform: scale(0.9,0.9); */
+    transform : scale(1);
+    display: block;
    
 }
 
 .social-post-area-img.is-visible {
-    opacity: 1;
-    transform: translateX(0);
+    /* opacity: 1; */
+    transform : scale(1.1);
+    transform-origin: 50% 50%;
   
   }
 
 /* The World We Want CSS End */
 
+/* Global Impacty CSS */
+
+
+.home-intro__heading span.l.is-visible{
+    opacity: 1;
+    transform: none;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    transition-delay: 75ms;    
+}
+.home-intro__heading span.l{
+    opacity: 0;
+    transform: translateX(-50%);
+}
+.home-intro__heading span.c.is-visible{
+    opacity: 1;
+    transform: none;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    transition-delay: .15ms;
+
+    
+}
+.home-intro__heading span.c{
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.home-intro__heading span.r.is-visible{
+    opacity: 1;
+    transform: none;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    transition-delay: .225ms;
+
+}
+.home-intro__heading span.c{
+    opacity: 0;
+    transform: translateX(25%);
+}
+
+
+
 
 /* Good News Section CSS Start */
 
 .news-section-container{
-    margin: 10rem 5rem 2rem 5rem;
+    margin: 1rem 5rem 2rem 5rem;
 }
 
 .news-section-container .news-header{
@@ -260,9 +303,8 @@ transform: scale(1.5);
 
 
 .news-area img{
-    border: 1px solid #d2d2d2;
     padding: 3px;
-    box-shadow: 0 0 5px #333;
+    /* box-shadow: 0 0 5px #333; */
    
 }
 
@@ -294,7 +336,7 @@ transform: scale(1.5);
 .news-img:nth-child(3){
     z-index: 2;
 }
-.news-area:hover .news-img:nth-child(1)
+/* .news-area:hover .news-img:nth-child(1)
 {
     -webkit-transform: rotate(15deg);
      transform: rotate(15deg);
@@ -312,7 +354,7 @@ transform: scale(1.5);
 .news-area:hover .news-img:nth-child(3){
     -webkit-transform: rotate(-5deg);
      transform: rotate(-5deg);
-}
+} */
 
 .news-content{
     padding-top: 18rem;
@@ -367,16 +409,34 @@ transform: scale(1.5);
     opacity: 0;
     
 }
-.whatwedo-area-r{
-    transform: translateX(-50%);
+/* .whatwedo-area-r{
+    transform:scale(0);
 }
 .whatwedo-area-l{
-    transform: translateX(-50%);
-}
+    transform:scale(0);
+} */
 .whatwedo-area.is-visible {
-    opacity: 1;
-    transform: translateX(0);
+    /* animation: popDiv 0.8s alternate ease-in-out; */
+    animation: fade-in .5s ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
   }
+  @keyframes fade-in {
+    0% { opacity: 0; transform: scale(0);}
+    25% { opacity: 0.1; transform: scale(0.15);filter: blur(1);}
+    50% { opacity: 0.3; transform: scale(0.25);filter: blur(0.8);}
+    70% { opacity: 0.5; transform: scale(0.5);filter: blur(0.6);}
+    85% {opacity: 0.7; transform: scale(.75);filter: blur(0.4);}
+    100% {transform: scale(1); opacity:1;filter: blur(0);}
+    }
+    
+  @keyframes popDiv { 
+    0%   {transform: scale(0)}
+    25%  {transform: scale(0.25)}
+    50%  {transform: scale(.50)}
+    100% {transform: scale(1)}
+}
 /* .whatwedo-area:hover{
    box-shadow: 0rem 1rem 2rem rgba(0,0,0,.2);
 } */
@@ -420,11 +480,13 @@ transform: scale(1.5);
 }
 
 .purpose-impact-container .title {
-    font-size: 130px;
+    font-family: Tusker Grotesk;
+    font-size: 100px;
     margin-bottom: 30px;
 }
 .purpose-impact-container .description {
-    font-size: 60px;
+    font-size: 100px;
+    font-family: 'Tusker Grotesk 5500 MEDIUM';
     margin-bottom: 20px;
     line-height: 105%;
 }
@@ -442,6 +504,11 @@ transform: scale(1.5);
 
 }
 
+.purpose-img{
+    width: 100%;
+    display: block;
+}
+
 /* purpose impact section css end */
 
 
@@ -455,7 +522,7 @@ transform: scale(1.5);
     margin-bottom: 5rem;
     color: #fff;
     font-size: 90px;
-    font-family: 'Tusker-5500';
+    font-family: 'Tusker-5500Medium';
 }
 
 .sdgs {
@@ -484,9 +551,9 @@ transform: scale(1.5);
 }
 
 .focused-sdg .name {
-    font-size: 55px;
+    font-size: 70px;
     color: #FFF;
-    font-family: 'Tusker-5500';
+    font-family: 'Tusker-5500Medium';
     padding-top: 15px;
 }
 
@@ -494,9 +561,9 @@ transform: scale(1.5);
     color: #FFF;
     line-height: 150%;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-REGULAR';
 }
 
 .sdgs .blurred-sdgs-container {
@@ -534,8 +601,8 @@ transform: scale(1.5);
 
 .our-work .title {
     margin-bottom: 6rem;
-    font-family: 'Tusker-5500';
-    font-size: 80px;
+    font-family: 'Tusker-5500MEDIUM';
+    font-size: 90px;
 }
 
 .our-work-tiles .tile {
@@ -552,11 +619,11 @@ transform: scale(1.5);
     object-fit: cover;
     transition: opacity 400ms ease-in ,transform 800ms ease-in;
     opacity: 0;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
 .our-work-tiles .tile.is-visible img {
     opacity: 1;
-    transform:translateX(0)
+    /* transform:translateX(0) */
 }
 
 
@@ -567,23 +634,23 @@ transform: scale(1.5);
     opacity: 0;
     transition: opacity 400ms ease-in ,transform 800ms ease-in;
     opacity: 0;
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
 }
 .our-work-tiles .tile .tile-text.is-visible{
     opacity: 1;
-    transform:translateX(0)
+    /* transform:translateX(0) */
 }
 
 .our-work-tiles .tile .work-title-1 {
-    font-family: 'Tusker-5500';
-    font-size: 90px;
+    font-family: 'Tusker Grotesk 7700 BOLD';
+    font-size: 120px;
     line-height: 100%;
     font-weight: lighter;
 }
 
 .our-work-tiles .tile .work-title-2 {
-    font-family: 'Tusker-7700';
-    font-size: 100px;
+    font-family: 'Tusker Grotesk 7700 BOLD';
+    font-size: 120px;
     margin-bottom: 15px;
     font-weight: bolder;
     max-width: 900px;
@@ -592,7 +659,8 @@ transform: scale(1.5);
 
 .our-work-tiles .tile .work-description {
     max-width: 400px;
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-REGULAR';
+    font-size: 24px;
     margin-bottom: 10px;
 }
 

@@ -24,7 +24,7 @@ const Header = ({sideMenuHeader, setShowSideMenu}) => {
                     <Logo href='https://www.instagram.com/the_worldwewant/?hl=en' icon={FacebookIcon}/>
                     <Logo href='https://www.facebook.com/www.theworldwewant/' icon={InstagramIcon}/>
                     <Logo href='https://twitter.com/The_WorldWeWant' icon={TwitterIcon}/>
-                    <li onClick={() => {setShowSideMenu(sideMenuHeader ? false: true )}} class='burger'><a target='_blank'><img src={sideMenuHeader ? HamburgerClosedIcon : HamburgerIcon}/></a></li>
+                    {/* <li onClick={() => {setShowSideMenu(sideMenuHeader ? false: true )}} class='burger'><a target='_blank'><img src={sideMenuHeader ? HamburgerClosedIcon : HamburgerIcon}/></a></li> */}
                 </ul>
 
         </nav>
