@@ -1,5 +1,7 @@
 
-
+body {
+  overflow-x: hidden;
+}
 @font-face {
   font-family: 'Tusker-5500';
   font-display: swap;

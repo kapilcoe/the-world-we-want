@@ -3,11 +3,20 @@ import { useSpring, animated } from 'react-spring';
 import ImageLoader from '../ImageLoader';
 import HeroBanner from '../../images/hero-banner-home.png';
 import {bannerZoomIn} from '../../utils';
+import BannerVideo from '../../video/banner-video.mp4';
 
+const videoStyle = {
+    width: '100%',
+}
 export default ({}) => {
     useEffect(() => {
-        //bannerZoomIn();
+        document.getElementById('banner-video').play();
+        document.body.addEventListener('click', () => {
+            document.getElementById('banner-video').muted = false;
+        });
     }, []);
     const props = useSpring({from: {opacity: 0}, opacity: 1});
-    return <div className="banner-image"><img className='banner-image-img' src={HeroBanner} alt='the world we want'/></div>
+    return <div className="banner-image"><video id='banner-video' muted style={videoStyle} loop autoplay className='banner-image-img' alt='the world we want'>
+            <source src={BannerVideo} type="video/mp4"></source>
+        </video></div>
 }

@@ -144,7 +144,7 @@ export default () => {
     useEffect(() => {
         setTimeout(() => {
             setShowLoader(false);
-        }, 4000);
+        }, 1000);
     }, [])
 
     return <>

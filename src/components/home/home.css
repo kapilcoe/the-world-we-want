@@ -52,9 +52,6 @@ All sections are part of home component hence css for all sections is inside hom
     line-height: 250px;
     letter-spacing: 0px;
     opacity: 0;
-    transform: translateY(50%);
-    transition-delay: .3s;
-    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
 
 }
 
@@ -70,9 +67,7 @@ All sections are part of home component hence css for all sections is inside hom
     color: #181818;
     letter-spacing: 0px;
     opacity: 0;
-    transform: translateY(50%);
-    transition-delay: .3s;
-    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    
 
 }
 .global-impact-container .subtitle.is-visible{
