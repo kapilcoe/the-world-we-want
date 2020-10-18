@@ -17,7 +17,7 @@ export default ({}) => {
 
     return <SectionsLoader callback={setIsLoaded}><animated.div  className='global-impact-container'>
         <div className='title'>
-            <div className="home-intro__heading"><span className="l show-on-scroll">A</span> <span className="c show-on-scroll">GLOBAL</span> <span className="r">SOCIAL</span></div>
+            <div className="home-intro__heading"><span className="l show-on-scroll">A</span> <span className="c show-on-scroll">GLOBAL</span> </div>
             {
                 
                 <animated.div className='impact'>IMPACT</animated.div>
