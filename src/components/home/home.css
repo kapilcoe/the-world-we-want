@@ -60,13 +60,13 @@ All sections are part of home component hence css for all sections is inside hom
 .global-impact-container .subtitle {
     margin-top: 80px;
     margin-right: 100px;
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-LIGHT';
     font-weight: normal;
     font-size: 48px;
     line-height: 52px;
+    letter-spacing: 0px;
     text-align: left;
     color: #181818;
-    line-height: 110%;
     opacity: 0;
     transform: translateY(50%);
     transition-delay: .3s;
@@ -104,6 +104,8 @@ All sections are part of home component hence css for all sections is inside hom
     transform: translateY(50%);
     transition-delay: .3s;
     transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    line-height: 120px;
+    letter-spacing: 0px;
 }
 .world-wewant-container .world-title.is-visible{
     opacity: 1;
@@ -112,6 +114,8 @@ All sections are part of home component hence css for all sections is inside hom
 .world-wewant-container .world-description{
     font-family: 'URW-DIN-REGULAR';
     font-size: 48px;
+    line-height: 52px;
+    letter-spacing: 0px;
     /* margin-right: 100px; */
     margin: 0rem 0rem 3rem 0rem;
     /* margin-bottom: 50px; */
@@ -293,13 +297,16 @@ All sections are part of home component hence css for all sections is inside hom
     font-family: 'Tusker-5500';
     font-size: 90px;
     margin-bottom: 50px;
+    line-height: 120px;
+    letter-spacing: 0px;
     opacity: 0;
-    transform: translate(0, 10vh);
-    transition: all 1.5s;
+    transform: translateY(50%);
+    transition-delay: .3s;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
 }
 .news-section-container .news-header.is-visible{
     opacity: 1;
-    transform: translate(0, 0);
+    transform: none;
     
 }
 .news-container{
@@ -323,14 +330,18 @@ transform: scale(1.5);
 
 .news-area .news-title{
     text-align: left;
-    font-family: 'Tusker-5500';
+    font-family: 'DRUK-BOLD';
     font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 0px;
     /* margin-bottom: 50px; */
 }
 
 .news-area .news-description{
     font-family: 'URW-WIN-LIGHT';
     font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0px;
     /* margin-right: 100px;
     margin-bottom: 50px; */
 }
@@ -410,6 +421,8 @@ transform: scale(1.5);
     transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
     transform: translateY(50%);
     transition-delay: .3s;
+    line-height: 120px;
+    letter-spacing: 0px;
 }
 
 .whatwedo-section-container .title.is-visible {
@@ -418,13 +431,15 @@ transform: scale(1.5);
 }
 .whatwedo-section-container .description {
     font-family: 'URW-WIN-LIGHT';
-    font-size: 35px;
+    font-size: 48px;
     margin-right: 100px;
     margin-bottom: 50px;
     opacity: 0;
     transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
     transform: translateY(50%);
     transition-delay: .3s;
+    line-height: 52px;
+    letter-spacing: 0px;
 }
 .whatwedo-section-container .description.is-visible {
     opacity: 1;
@@ -513,6 +528,8 @@ transform: scale(1.5);
     font-family: 'Tusker-5500';
     color: #FFF;
     position: relative;
+    line-height: 110px;
+    letter-spacing: 0px;
 }
 
 .purpose-impact-container .title {
@@ -558,6 +575,8 @@ transform: scale(1.5);
     margin-bottom: 5rem;
     color: #fff;
     font-size: 90px;
+    line-height: 100px;
+    letter-spacing: 0px;
     font-family: 'Tusker-5500';
 }
 
@@ -591,6 +610,8 @@ transform: scale(1.5);
     color: #FFF;
     font-family: 'Tusker-5500';
     padding-top: 15px;
+    line-height: 180px;
+    letter-spacing: 0px;
 }
 
 .focused-sdg .description {
@@ -599,6 +620,8 @@ transform: scale(1.5);
     padding-top: 10px;
     font-size: 24px;
     font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
     font-family: 'URW-DIN-REGULAR';
 }
 
@@ -639,6 +662,7 @@ transform: scale(1.5);
     margin-bottom: 6rem;
     font-family: 'Tusker-5500';
     font-size: 90px;
+   
 }
 
 .our-work-tiles .tile {
@@ -682,6 +706,8 @@ transform: scale(1.5);
     font-size: 120px;
     line-height: 100%;
     font-weight: lighter;
+    line-height: 125px;
+    letter-spacing: 0px;
 }
 
 .our-work-tiles .tile .work-title-2 {
@@ -690,6 +716,8 @@ transform: scale(1.5);
     margin-bottom: 15px;
     font-weight: bolder;
     max-width: 900px;
+    line-height: 125px;
+    letter-spacing: 0px;
     
 }
 
@@ -698,6 +726,8 @@ transform: scale(1.5);
     font-family: 'URW-DIN-REGULAR';
     font-size: 24px;
     margin-bottom: 10px;
+    line-height: 28px;
+    letter-spacing: 0px;
 }
 
 
