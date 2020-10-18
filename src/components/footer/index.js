@@ -8,8 +8,8 @@ export default ({}) => {
         <footer className="footer">
             <div className="l-footer">
                 <div className="f-title">Want to Change the world with us?</div>
-                <p>hello@theworldwewant.com</p>
-                <div className="subscribe-form"><a href="mailto:someone@example.com" className="button"><span>Email Us</span></a></div>
+                <p>natasha@sterlingglobal.com</p>
+                <div className="subscribe-form"><a href="mailto:natasha@sterlingglobal.com" className="button"><span>Email Us</span></a></div>
             </div>
             <div className="r-footer">
                 <div className="r-footer-title">Find us here</div>
