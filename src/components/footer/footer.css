@@ -6,23 +6,23 @@
 } */
 
 .footer {
-display: flex;
-flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 /* padding: 50px; */
-color: #fff;
-background-color: black;
-border-left: 80px solid transparent;
+    color: #fff;
+    padding: 150px 0px 50px 150px;
+    background-color: #181818;
 }
 
 .r-footer{
-    padding: 6rem 0rem 4rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
 }
 .l-footer{
-    padding: 6rem 0rem 4rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
 }
 
 .footer > * {
-flex:  1 100%;
+    flex:  1 100%;
 }
 
 /* .l-footer {
@@ -31,19 +31,21 @@ margin-bottom: 2em;
 } */
 
 .l-footer .f-title {
-    width: 70%;
+    width: 100%;
     font-size: 80px;
-    font-weight: lighter;
     font-family: 'Tusker-5700';
     text-transform: uppercase;
+    letter-spacing: 0px;
+    line-height: 90px;
+
 }
 .r-footer .r-footer-title{
-    width: 30%;
+    width: 100%;
     font-size: 80px;
-    font-weight: lighter;
     font-family: 'Tusker-5700';
     text-transform: uppercase;
-
+    letter-spacing: 0px;
+    line-height: 90px;
 }
 .footer ul {
 list-style: none;
@@ -101,16 +103,20 @@ column-gap: 1.25em;
 }
 
 .l-footer p {
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-LIGHT';
     font-size: 36px;
     color: #fff;
+    line-height: 28px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
 }   
 
 .r-footer p {
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-LIGHT';
     font-size: 36px;
     color: #fff;
-    line-height: 0px;
+    line-height: 38px;
+    letter-spacing: 0px;
 }   
 
 
@@ -170,13 +176,17 @@ column-gap: 1.25em;
 
 
 /* Button Css */
+
+.subscribe-form{
+    margin-top: 20px;
+}
 .subscribe-form input[type="text"]{
     width: 55%;
 }
 .subscribe-form .button {
     border-radius: 30px;
     background-color: #000000;
-    border: 2px solid orange;
+    border: 3px solid #f86445;
     color: #FFFFFF;
     text-align: center;
     font-size: 16px;
@@ -184,7 +194,14 @@ column-gap: 1.25em;
     /* width: 200px; */
     transition: all 0.5s;
     cursor: pointer;
-    margin: 13px;
+    padding: 5px 15px;
+    margin-top: 10px;
+  }
+
+  .subscribe-form .button:hover { 
+    border: 3px solid #f86445;
+    background-color: #f86445;
+    color: #FFF;
   }
 
 
@@ -198,10 +215,25 @@ flex-grow: 2;
 }
 
 .l-footer {
-flex: 1 0px;
+flex: 0.65 0px;
 }
 
 .r-footer {
-flex: 1 0px;
+flex: 0.3 0px;
 }
+}
+
+
+.footer-copyright {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    font-family: 'URW-DIN-MEDIUM';
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    background-color: #292929;
+    color: #FFF;
+    padding-left: 150px;
+    border-top: 1px solid grey;
 }
