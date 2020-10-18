@@ -614,7 +614,7 @@ transform: scale(1.5);
 
 
 .our-work-tiles .tile img {
-    height: 600px;
+    height: 730px;
     width: 100%;
     object-fit: cover;
     transition: opacity 400ms ease-in ,transform 800ms ease-in;
@@ -629,7 +629,7 @@ transform: scale(1.5);
 
 .our-work-tiles .tile .tile-text {
     position: absolute;
-    bottom: 20px;
+    bottom: 35px;
     margin-left: 20px;
     opacity: 0;
     transition: opacity 400ms ease-in ,transform 800ms ease-in;
@@ -658,7 +658,7 @@ transform: scale(1.5);
 }
 
 .our-work-tiles .tile .work-description {
-    max-width: 400px;
+    max-width: 600px;
     font-family: 'URW-DIN-REGULAR';
     font-size: 24px;
     margin-bottom: 10px;
