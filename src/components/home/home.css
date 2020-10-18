@@ -4,7 +4,7 @@
 }
 
 /* .banner-image img{
-    height: 100%;
+    height: 100%
     width: 100%;
 } */
 
@@ -50,6 +50,10 @@ All sections are part of home component hence css for all sections is inside hom
     font-size: 250px;
     font-family: 'Tusker-7700';
     line-height: 110%;
+    opacity: 0;
+    transform: translateY(50%);
+    transition-delay: .3s;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
 
 }
 
@@ -63,13 +67,22 @@ All sections are part of home component hence css for all sections is inside hom
     text-align: left;
     color: #181818;
     line-height: 110%;
+    opacity: 0;
+    transform: translateY(50%);
+    transition-delay: .3s;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
 
 }
-
+.global-impact-container .subtitle.is-visible{
+    opacity: 1;
+    transform: none;
+}
 .global-impact-container .subtitle .para {
     margin-bottom: 40px;
 
 }
+
+
 
 
 
@@ -88,12 +101,13 @@ All sections are part of home component hence css for all sections is inside hom
     font-size: 90px;
     margin-bottom: 50px;
     opacity: 0;
-    transform: translate(0, 10vh);
-    transition: all 1.5s;
+    transform: translateY(50%);
+    transition-delay: .3s;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
 }
 .world-wewant-container .world-title.is-visible{
     opacity: 1;
-    transform: translate(0, 0);
+    transform: none;
 }
 .world-wewant-container .world-description{
     font-family: 'URW-DIN-REGULAR';
@@ -102,12 +116,13 @@ All sections are part of home component hence css for all sections is inside hom
     margin: 0rem 0rem 3rem 0rem;
     /* margin-bottom: 50px; */
     opacity: 0;
-    transform: translate(10vh, 0);
-    transition: all 1.5s;
+    transform: translateY(50%);
+    transition-delay: .3s;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
 }
 .world-wewant-container .world-description.is-visible{
     opacity: 1;
-    transform: translate(0, 0);
+    transform: none;
 }
 
 .social-post-container{
@@ -210,43 +225,62 @@ All sections are part of home component hence css for all sections is inside hom
 /* Global Impacty CSS */
 
 
-.home-intro__heading span.l.is-visible{
-    opacity: 1;
-    transform: none;
-    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
-    transition-delay: 75ms;    
-}
-.home-intro__heading span.l{
+
+.home-intro__heading .l{
     opacity: 0;
     transform: translateX(-50%);
+    display: inline-block;
+    /* transition: opacity 400ms ease-in ,transform 800ms ease-in; */
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    transition-delay: 75ms;   
+}
+.home-intro__heading .l.is-visible{
+    opacity: 1;
+    transform: none;
+}
+.home-intro__heading span.c{
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(50%);
+    transition-delay: .15ms;
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
 }
 .home-intro__heading span.c.is-visible{
     opacity: 1;
     transform: none;
-    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
-    transition-delay: .15ms;
-
-    
-}
-.home-intro__heading span.c{
-    opacity: 0;
-    transform: translateX(50%);
-}
-
-.home-intro__heading span.r.is-visible{
-    opacity: 1;
-    transform: none;
-    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
-    transition-delay: .225ms;
-
+   
 }
 .home-intro__heading span.r{
     opacity: 0;
-    transform: translateX(25%);
+    display: inline-block;
+    transform: translateX(50%);
+    /* transition: all 1.5s; */
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    transition-delay: .225ms;
+}
+.home-intro__heading span.r.is-visible{
+    opacity: 1;
+    transform: none;
+    /* transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s; */
 }
 
+.global-impact-container .title  .impact.is-visible{
+    opacity: 1;
+    transform: none;
+    
+}
 
+.impact-title-end{
+    opacity: 0;
+    transform: translateX(50%);
+    transition: transform .3s cubic-bezier(.19,1,.22,1),opacity .15s;
+    transition-delay: 20ms;
+}
 
+.impact-title-end.is-visible{
+    opacity: 1;
+    transform: none;
+}
 
 /* Good News Section CSS Start */
 
@@ -373,13 +407,14 @@ transform: scale(1.5);
     font-size: 90px;
     margin-bottom: 50px;
     opacity: 0;
-    transform: translate(10vh, 0);
-    transition: all 1.5s;
+    transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
+    transform: translateY(50%);
+    transition-delay: .3s;
 }
 
 .whatwedo-section-container .title.is-visible {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: none;
 }
 .whatwedo-section-container .description {
     font-family: 'URW-WIN-LIGHT';
@@ -387,12 +422,13 @@ transform: scale(1.5);
     margin-right: 100px;
     margin-bottom: 50px;
     opacity: 0;
-    transform: translate(0, 10vh);
-    transition: all 1.5s;
+    transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
+    transform: translateY(50%);
+    transition-delay: .3s;
 }
 .whatwedo-section-container .description.is-visible {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: none;
 }
 .whatwedo-container{
     display: flex;
@@ -632,13 +668,13 @@ transform: scale(1.5);
     bottom: 35px;
     margin-left: 20px;
     opacity: 0;
-    transition: opacity 400ms ease-in ,transform 800ms ease-in;
-    opacity: 0;
-    /* transform: translateX(50%); */
+    transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
+    transform: translateY(50%);
+    transition-delay: .3s;
 }
 .our-work-tiles .tile .tile-text.is-visible{
     opacity: 1;
-    /* transform:translateX(0) */
+    transform:none;
 }
 
 .our-work-tiles .tile .work-title-1 {
