@@ -41,14 +41,14 @@ All sections are part of home component hence css for all sections is inside hom
 .global-impact-container .title {
     font-size: 150px;
     font-weight: lighter;
-    font-family: 'Tusker-5700BOLD';
+    font-family: 'Tusker-5700';
     line-height: 110%;
 
 }
 
 .global-impact-container .title .impact {
     font-size: 250px;
-    font-family: 'Tusker-7700BOLD';
+    font-family: 'Tusker-7700';
     line-height: 110%;
 
 }
@@ -84,7 +84,7 @@ All sections are part of home component hence css for all sections is inside hom
 
 .world-wewant-container .world-title{
     text-align: left;
-    font-family: 'Tusker Grotesk 5500 MEDIUM';
+    font-family: 'Tusker-5500';
     font-size: 90px;
     margin-bottom: 50px;
     opacity: 0;
@@ -240,7 +240,7 @@ All sections are part of home component hence css for all sections is inside hom
     transition-delay: .225ms;
 
 }
-.home-intro__heading span.c{
+.home-intro__heading span.r{
     opacity: 0;
     transform: translateX(25%);
 }
@@ -480,13 +480,13 @@ transform: scale(1.5);
 }
 
 .purpose-impact-container .title {
-    font-family: Tusker Grotesk;
+    /* font-family: Tusker Grotesk; */
     font-size: 100px;
     margin-bottom: 30px;
 }
 .purpose-impact-container .description {
     font-size: 100px;
-    font-family: 'Tusker Grotesk 5500 MEDIUM';
+    font-family: 'Tusker-5500';
     margin-bottom: 20px;
     line-height: 105%;
 }
@@ -522,7 +522,7 @@ transform: scale(1.5);
     margin-bottom: 5rem;
     color: #fff;
     font-size: 90px;
-    font-family: 'Tusker-5500Medium';
+    font-family: 'Tusker-5500';
 }
 
 .sdgs {
@@ -553,7 +553,7 @@ transform: scale(1.5);
 .focused-sdg .name {
     font-size: 70px;
     color: #FFF;
-    font-family: 'Tusker-5500Medium';
+    font-family: 'Tusker-5500';
     padding-top: 15px;
 }
 
@@ -601,7 +601,7 @@ transform: scale(1.5);
 
 .our-work .title {
     margin-bottom: 6rem;
-    font-family: 'Tusker-5500MEDIUM';
+    font-family: 'Tusker-5500';
     font-size: 90px;
 }
 
@@ -642,14 +642,14 @@ transform: scale(1.5);
 }
 
 .our-work-tiles .tile .work-title-1 {
-    font-family: 'Tusker Grotesk 7700 BOLD';
+    font-family: 'Tusker-7700';
     font-size: 120px;
     line-height: 100%;
     font-weight: lighter;
 }
 
 .our-work-tiles .tile .work-title-2 {
-    font-family: 'Tusker Grotesk 7700 BOLD';
+    font-family: 'Tusker-7700';
     font-size: 120px;
     margin-bottom: 15px;
     font-weight: bolder;
