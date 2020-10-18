@@ -2,7 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import { render } from 'react-dom'
 import { animated, useTransition, useSpring, useChain, config } from 'react-spring'
 import styled, { createGlobalStyle } from 'styled-components'
-import shuffle from 'lodash/shuffle'
+import shuffle from 'lodash/shuffle';
+import SDGWHEEL  from '../images/SDG-WHEEL.png'
 
 
 const data = [
@@ -143,80 +144,86 @@ export default () => {
     useEffect(() => {
         setTimeout(() => {
             setShowLoader(false);
-        }, 6000);
+        }, 4000);
     }, [])
 
     return <>
-        {showLoader && <div style={pageWrapperStyle}><AnimatedLoader/></div>}
+        {showLoader && <div style={pageWrapperStyle}><SpinningWheel/></div>}
     </>
 }
 
-
-const AnimatedLoader = () => {
-    //useInterval(() => {set(!open)}, 1500);
-  const [rows, set] = useState(data)
-  useEffect(() => void setInterval(() => set(shuffle), 2000), [])
-
-  let height = 0
-  const transitions = useTransition(
-    rows.map(data => ({ ...data, y: (height += data.height) - data.height })),
-    d => d.name,
-    {
-      from: { height: 0, opacity: 0 },
-      leave: { height: 0, opacity: 0 },
-      enter: ({ y, height }) => ({ y, height, opacity: 1 }),
-      update: ({ y, height }) => ({ y, height })
-    }
-  )
-
-    return (
-        <div style={{height: '25%', width: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center', transform: 'rotateZ(90deg)'}}>
-        <div class="list" style={{ height }}>
-      {transitions.map(({ item, props: { y, ...rest }, key }, index) => (
-        <animated.div
-          key={key}
-          class="card"
-          style={{ zIndex: data.length - index, transform: y.interpolate(y => `translate3d(0,${y}px,0)`), ...rest }}>
-          <div class="cell">
-            <div class="details" style={{ backgroundImage: item.css }}>{item.text}</div>
-          </div>
-        </animated.div>
-      ))}
+const SpinningWheel = ({}) => {
+  return <div style={{display: 'flex'}}>
+    <div><img className="spinning-wheel" height='100px' width='100px' src={SDGWHEEL}/></div>
     </div>
-        </div>
-    )
 }
 
 
-const Container = styled(animated.div)`
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  grid-gap: 25px;
-  padding: 25px;
-  background: white;
-  border-radius: 5px;
-  cursor: pointer;
-  will-change: width, height;
-`
+// const AnimatedLoader = () => {
+//     //useInterval(() => {set(!open)}, 1500);
+//   const [rows, set] = useState(data)
+//   useEffect(() => void setInterval(() => set(shuffle), 2000), [])
 
-const Item = styled(animated.div)`
-  width: 100%;
-  height: 100%;
-  background: white;
-  border-radius: 5px;
-  will-change: transform, opacity;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFF
-`
+//   let height = 0
+//   const transitions = useTransition(
+//     rows.map(data => ({ ...data, y: (height += data.height) - data.height })),
+//     d => d.name,
+//     {
+//       from: { height: 0, opacity: 0 },
+//       leave: { height: 0, opacity: 0 },
+//       enter: ({ y, height }) => ({ y, height, opacity: 1 }),
+//       update: ({ y, height }) => ({ y, height })
+//     }
+//   )
 
-const ItemDiv = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex,
-  align-items: center,
-  justify-content: center,
-  color: #FFF
-`
+//     return (
+//         <div style={{height: '25%', width: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center', transform: 'rotateZ(90deg)'}}>
+//         <div class="list" style={{ height }}>
+//       {transitions.map(({ item, props: { y, ...rest }, key }, index) => (
+//         <animated.div
+//           key={key}
+//           class="card"
+//           style={{ zIndex: data.length - index, transform: y.interpolate(y => `translate3d(0,${y}px,0)`), ...rest }}>
+//           <div class="cell">
+//             <div class="details" style={{ backgroundImage: item.css }}>{item.text}</div>
+//           </div>
+//         </animated.div>
+//       ))}
+//     </div>
+//         </div>
+//     )
+// }
+
+
+// const Container = styled(animated.div)`
+//   position: relative;
+//   display: grid;
+//   grid-template-columns: repeat(4, minmax(100px, 1fr));
+//   grid-gap: 25px;
+//   padding: 25px;
+//   background: white;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   will-change: width, height;
+// `
+
+// const Item = styled(animated.div)`
+//   width: 100%;
+//   height: 100%;
+//   background: white;
+//   border-radius: 5px;
+//   will-change: transform, opacity;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: #FFF
+// `
+
+// const ItemDiv = styled.div`
+//     width: 100%;
+//     height: 100%;
+//     display: flex,
+//   align-items: center,
+//   justify-content: center,
+//   color: #FFF
+// `

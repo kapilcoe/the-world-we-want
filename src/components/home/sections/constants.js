@@ -1,4 +1,4 @@
-import SDG1 from '../../../images/SDG1.png';
+import SDG1 from '../../../images/SDG1.jpg';
 import SDG2 from '../../../images/SDG2.jpg';
 import SDG3 from '../../../images/SDG3.jpg';
 import SDG1Grey from '../../../images/SDG1-greyscale.jpg';
@@ -13,24 +13,24 @@ import End7 from '../../../images/End7.jpeg';
 
 export const SDGs = [
     {
-        src: SDG1Grey,
+        src: SDG1,
         greyscaleSrc: SDG1Grey,
-        title: 'LIFE BELOW WATER',
-        subtitle: 'The World We Want is one with oceans of opportunity. We want our marine life to be safe and our seas to remain our best resource. How can we get to the depths of the problem? How can we preserve our coastal bio ‐diversity?',
+        title: 'GENDER EQUALITY',
+        subtitle: 'The World We Want is one that’s gender neutral. We will always champion all things equal and inclusive. Shouldn’t we be co-­‐existing in harmony? Shouldn’t we be recognising the power of mutual respect?',
         color: '#0a97d9'
     },
     {
         src: SDG2,
         greyscaleSrc: SDG2Grey,
-        title: 'Life On Land',
-        subtitle: 'The World We Want is one with oceans of opportunity. We want our marine life to be safe and our seas to remain our best resource. How can we get to the depths of the problem? How can we preserve our coastal bio ‐diversity?',
+        title: 'NO POVERTY',
+        subtitle: 'The World We Want is one without poverty. We stand committed to making this happen. Surely, there is enough to go around? Surely, we can play a role in making people self-­ sufficient and financially-­ independent?',
         color: '#56c02b'
     },
     {
         src: SDG3,
         greyscaleSrc: SDG3Grey,
-        title: 'Peace Justice and Strong Institutions',
-        subtitle: 'The World We Want is one with oceans of opportunity. We want our marine life to be safe and our seas to remain our best resource. How can we get to the depths of the problem? How can we preserve our coastal bio ‐diversity?',
+        title: 'LIFE ON LAND',
+        subtitle: 'The World We Want is one with acres of prosperity. We need to live surrounded by nature and its generous bounty. Isn’t our environment our home? Isn’t our planet our habitat?',
         color: '#00689d'
     },
 ];

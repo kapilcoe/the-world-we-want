@@ -6,7 +6,7 @@ import {bannerZoomIn} from '../../utils';
 
 export default ({}) => {
     useEffect(() => {
-        bannerZoomIn();
+        //bannerZoomIn();
     }, []);
     const props = useSpring({from: {opacity: 0}, opacity: 1});
     return <animated.div className="banner-image"><img className='banner-image-img' src={HeroBanner} alt='the world we want'/></animated.div>

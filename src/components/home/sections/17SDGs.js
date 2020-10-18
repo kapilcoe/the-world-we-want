@@ -25,25 +25,27 @@ export default ({}) => {
         <div className='title'>
             THE 17 SDGS
         </div>
+        <div className='subtitle'>
+        We are committed to accelerate SDGs action. Through hero ventures, accelerators and tapping our areas of expertise, we help make the global goals a part of everyday life and lingo. Here are just some of the goals we're working towards achieving.
+        </div>
         <div className='sdgs'>
             
             {
-                SDGs.map(sdg => <FocusedSDG
-                    sdg={sdg}
-                />)
-            }
-            {/* <div className='blurred-sdgs-container'>
-                {blurredSDGS.map((sdg, idx) => {
-                    return <BlurredSDG
-                        key={idx}
+                SDGs.map((sdg,idx) => {{
+                if(idx === selectedSDG) {
+                    return<FocusedSDG
                         sdg={sdg}
-                        onHover={onHoverBlurredSDG.bind(null, sdg)}
-
                     />
-                })}
-                </div> */}
-            
-        
+                }else {
+                    return <BlurredSDG
+                    key={idx}
+                    sdg={sdg}
+                    onHover={onHoverBlurredSDG.bind(null, sdg)}
+
+                />
+                }
+            }})
+            }
         </div>
         <div className='sdg-description'>
 
@@ -57,13 +59,13 @@ const FocusedSDG = ({sdg }) => {
     return <div className='focused-sdg' >
         <ImageLoader height="697px" src={sdg.src}/>
         <div className='name'>{sdg.title}</div>
-        <div style={{height: '10px', width:'102%', 'backgroundColor': `${sdg.color}`, 'borderRadius':'8px','marginLeft': '-1%'}}></div>
+        <div style={{height: '12px', width:'102%', 'backgroundColor': `${sdg.color}`, 'borderRadius':'8px','marginLeft': '-1%'}}></div>
         <div className='description'>{sdg.subtitle}</div>
         </div>
 }
 
 const BlurredSDG = ({sdg,onHover}) => {
-    return <div className='blurred-sdg' ><ImageLoader height="550px" onMouseEnter={()=>{}} src={sdg.greyscaleSrc}/>
+    return <div onMouseEnter={onHover} className='blurred-sdg' ><ImageLoader height="550px" onMouseEnter={()=>{}} src={sdg.greyscaleSrc}/>
     <div className='name'>{sdg.title}</div>
     <div style={{height: '3px', width:'102%', 'backgroundColor': `${sdg.color}`, 'marginLeft': '-1%'}}></div>
     </div>

@@ -40,16 +40,17 @@ All sections are part of home component hence css for all sections is inside hom
 
 .global-impact-container .title {
     font-size: 150px;
-    font-weight: lighter;
     font-family: 'Tusker-5700';
-    line-height: 110%;
+    line-height: 250px;
+    letter-spacing: 0px;
 
 }
 
 .global-impact-container .title .impact {
     font-size: 250px;
     font-family: 'Tusker-7700';
-    line-height: 110%;
+    line-height: 250px;
+    letter-spacing: 0px;
     opacity: 0;
     transform: translateY(50%);
     transition-delay: .3s;
@@ -67,6 +68,7 @@ All sections are part of home component hence css for all sections is inside hom
     letter-spacing: 0px;
     text-align: left;
     color: #181818;
+    letter-spacing: 0px;
     opacity: 0;
     transform: translateY(50%);
     transition-delay: .3s;
@@ -150,7 +152,7 @@ All sections are part of home component hence css for all sections is inside hom
 } */
 
 .social-post-area{
-    width: 29%;
+    width: 32%;
     height: auto;
     float: left;
     /* box-shadow: 10px 10px 17px grey; */
@@ -541,7 +543,8 @@ transform: scale(1.5);
     font-size: 100px;
     font-family: 'Tusker-5500';
     margin-bottom: 20px;
-    line-height: 105%;
+    letter-spacing: 0px;
+    line-height: 110px;
 }
 .purpose-impact-container .pie-container {
     position: absolute;
@@ -560,6 +563,8 @@ transform: scale(1.5);
 .purpose-img{
     width: 100%;
     display: block;
+    margin-left: -65px;
+
 }
 
 /* purpose impact section css end */
@@ -578,6 +583,15 @@ transform: scale(1.5);
     line-height: 100px;
     letter-spacing: 0px;
     font-family: 'Tusker-5500';
+    line-height: 100px;
+}
+
+.sdgs-container .subtitle {
+    margin-bottom: 5rem;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'URW-DIN-LIGHT';
+    line-height: 30px;
 }
 
 .sdgs {
@@ -585,18 +599,18 @@ transform: scale(1.5);
 }
 
 .sdgs .focused-sdg {
-    flex-basis: 33%;
+    flex-basis: 70%;
     padding-right: 20px;
     transition: all 0.5s ease-out;
     cursor: pointer;
 }
 
-.sdgs:hover .focused-sdg {
+/* .sdgs:hover .focused-sdg {
     flex-basis: 20%;
 }
 .sdgs:hover .focused-sdg:hover {
     flex-basis: 60%;
-}
+} */
 
 .focused-sdg img {
     width: 100%;
@@ -607,16 +621,17 @@ transform: scale(1.5);
 
 .focused-sdg .name {
     font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 0px;
     color: #FFF;
     font-family: 'Tusker-5500';
     padding-top: 15px;
-    line-height: 180px;
     letter-spacing: 0px;
 }
 
 .focused-sdg .description {
     color: #FFF;
-    line-height: 150%;
+    line-height: 28px;
     padding-top: 10px;
     font-size: 24px;
     font-weight: 300;
@@ -625,15 +640,9 @@ transform: scale(1.5);
     font-family: 'URW-DIN-REGULAR';
 }
 
-.sdgs .blurred-sdgs-container {
-    width: 50%;
-    display: flex;
-    cursor: pointer;
-}
-
 .sdgs .blurred-sdg {
-    width: 50%;
-    padding-right: 4%;
+    flex-basis: 15%;
+    padding-right: 20px;
 }
 
 .blurred-sdg img {
@@ -643,11 +652,12 @@ transform: scale(1.5);
 }
 
 .blurred-sdg .name {
-    height: 50px;
-    font-size: 16px;
+    height: 90px;
+    font-size: 24px;
+    line-height: 28px;
     color: #FFF;
     padding-top: 10px;
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-MEDIUM';
 }
 
 /* sdgs css end */
@@ -897,4 +907,21 @@ transform: scale(1.5);
     justify-content: center;
     color: #FFF;
   }
+
+  .spinning-wheel {
+    animation: rotation 4s infinite linear;
+  }
   
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .loading-soon {
+      width: 100%;
+      
+  }

@@ -14,10 +14,11 @@ export default ({}) => {
     return <div className="home-container">
             <HeroBanner/>
             <GlobalImpact/>
+            <GoodNews/>
             <SDGs/>
             <OurWork/>
             <PurposeImpact/>
             <WorldWeWant/>
-            <GoodNews/>
+            
         </div>
 }
