@@ -17,14 +17,14 @@ export default ({}) => {
 
     return <SectionsLoader callback={setIsLoaded}><animated.div  className='global-impact-container'>
         <div className='title'>
-            <div className="home-intro__heading"><span className="l show-on-scroll">A</span> <span className="c show-on-scroll">GLOBAL</span> </div>
+            <div className="home-intro__heading"><span className="l show-on-scroll">A</span> <span className="c show-on-scroll">GLOBAL</span> <span className="r show-on-scroll">SOCIAL</span></div>
             {
                 
-                <animated.div className='impact'>IMPACT</animated.div>
+                <animated.div className='impact show-on-scroll'>IMPACT</animated.div>
             }
-            <div>ENTERPRISE</div>
+            <div className='impact-title-end show-on-scroll'>ENTERPRISE</div>
         </div>
-        <div className='subtitle'>
+        <div className='subtitle show-on-scroll'>
             <div className='para'>To accelerate the achievement of the United Nations’ Sustainable Development Goals by 2030, through positive action, strategic communication and global connections, creating powerful and sustained social impact.</div>
             <div className='para'>We use the power of purpose, the strength of multi-stakeholder collaborations, our own proprietary initiatives and creative storytelling and strategies to shape policies and priorities and to mobilise action.</div>
         </div>
