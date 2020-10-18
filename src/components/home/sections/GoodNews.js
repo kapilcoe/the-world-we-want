@@ -10,8 +10,6 @@ export default ({}) => {
             <div className="news-container">
                 <div className="news-area">
                     <img height="250px" className="news-img" src={news_1}></img>
-                    <img height="250px" className="news-img" src={news_1}></img>
-                    <img height="250px" className="news-img" src={news_1}></img>
                     <div className="news-content">
                         <div className="news-title">Title</div>
                         <div className="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -20,9 +18,6 @@ export default ({}) => {
                 </div>
                 <div className="news-area">
                     <img height="250px" className="news-img"  src={news_2}></img>
-                    <img height="250px" className="news-img"  src={news_2}></img>
-                    <img height="250px" className="news-img"  src={news_2}></img>
-                    
                     <div className="news-content">
                         <div className="news-title">Title</div>
                         <div className="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>

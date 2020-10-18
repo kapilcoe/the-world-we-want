@@ -17,7 +17,6 @@ export default ({}) => {
             <SDGs/>
             <OurWork/>
             <PurposeImpact/>
-            <WhatWeDo/>
             <WorldWeWant/>
             <GoodNews/>
         </div>
