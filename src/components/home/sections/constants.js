@@ -7,7 +7,7 @@ import SDG3Grey from '../../../images/SDG3-greyscale.jpg';
 
 import Godan from '../../../images/Godan.jpeg';
 import WhatIReallyReallyWant from '../../../images/WhatIReallyReallyWant.jpg';
-import LetsTalk from '../../../images/LetsTalk.JPG';
+import LetsTalk from '../../../images/LetsTalk.jpg';
 import End7 from '../../../images/End7.jpeg';
 
 
