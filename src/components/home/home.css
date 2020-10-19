@@ -710,17 +710,16 @@ transform: scale(1.5);
     font-family: 'Tusker-5500';
     font-size: 120px;
     line-height: 100%;
-    font-weight: lighter;
     line-height: 125px;
     letter-spacing: 0px;
 }
 
 .our-work-tiles .tile .work-title-2 {
-    font-family: 'Tusker-5500';
+    font-family: 'Tusker-7700';
     font-size: 120px;
     margin-bottom: 15px;
     font-weight: bolder;
-    max-width: 900px;
+    max-width: 1200px;
     line-height: 125px;
     letter-spacing: 0px;
     

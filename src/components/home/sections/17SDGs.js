@@ -57,7 +57,7 @@ export default ({}) => {
 
 const FocusedSDG = ({sdg }) => {
     return <div className='focused-sdg' >
-        <ImageLoader height="697px" src={sdg.src}/>
+        <img height="697px" src={sdg.src}/>
         <div className='name'>{sdg.title}</div>
         <div style={{height: '12px', width:'102%', 'backgroundColor': `${sdg.color}`, 'borderRadius':'8px','marginLeft': '-1%'}}></div>
         <div className='description'>{sdg.subtitle}</div>
@@ -65,7 +65,7 @@ const FocusedSDG = ({sdg }) => {
 }
 
 const BlurredSDG = ({sdg,onHover}) => {
-    return <div onMouseEnter={onHover} className='blurred-sdg' ><ImageLoader height="550px" onMouseEnter={()=>{}} src={sdg.greyscaleSrc}/>
+    return <div onMouseEnter={onHover} className='blurred-sdg' ><img height="550px" onMouseEnter={()=>{}} src={sdg.greyscaleSrc}/>
     <div className='name'>{sdg.title}</div>
     <div style={{height: '3px', width:'102%', 'backgroundColor': `${sdg.color}`, 'marginLeft': '-1%'}}></div>
     </div>

@@ -1,15 +1,16 @@
 import React,{useEffect} from 'react';
-import socialimg1 from '../../../images/social_img1.png';
-import socialimg2 from '../../../images/social_img2.png';
-import socialimg3 from '../../../images/social_img3.png';
-import socialimg4 from '../../../images/social_img4.png';
-import socialimg5 from '../../../images/social_img5.png';
-import socialimg6 from '../../../images/social_img6.png';
+import socialimg1 from '../../../images/post1.jpeg';
+import socialimg2 from '../../../images/post2.jpeg';
+import socialimg3 from '../../../images/post3.jpeg';
+import socialimg4 from '../../../images/post4.jpeg';
+import socialimg5 from '../../../images/post5.jpeg';
+import socialimg6 from '../../../images/post6.mp4';
 import {scrollscreenshow} from '../../../utils';
 
 export default ({}) => {
     useEffect(() => {
         scrollscreenshow();
+        document.getElementById('social-video').play();
     }, []);
     return <div className="world-wewant-container">
                 <div className="world-title show-on-scroll">#THEWORLDWEWANT</div>
@@ -31,7 +32,9 @@ export default ({}) => {
                         <img className="social-post-area-img show-on-scroll" src={socialimg5}></img>
                     </div>
                     <div className="social-post-area">
-                        <img className="social-post-area-img show-on-scroll" src={socialimg6}></img>
+                    <video height='100%' width='100%' id='social-video' muted loop autoplay alt='the world we want'>
+                        <source src={socialimg6} type="video/mp4"></source>
+                    </video>
                     </div>
                 
                 </div>

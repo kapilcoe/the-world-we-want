@@ -139,6 +139,14 @@ const pageWrapperStyle = {
     justifyContent: 'center'
 }
 
+const loaderStyle = {width: '100vw', display: 'flex', justifyContent: 'center', alignItems:'center'};
+const loaderTextStyle = {
+  ...loaderStyle,
+  color: '#181818',
+  fontFamily: 'Tusker-5500',
+  marginTop: '20px'
+}
+
 export default () => {
     const [showLoader, setShowLoader] = useState(true);
     useEffect(() => {
@@ -153,8 +161,11 @@ export default () => {
 }
 
 const SpinningWheel = ({}) => {
-  return <div style={{display: 'flex'}}>
-    <div><img className="spinning-wheel" height='100px' width='100px' src={SDGWHEEL}/></div>
+  return <div>
+    <div style={loaderStyle}><img className="spinning-wheel" height='100px' width='100px' src={SDGWHEEL}/></div>
+    <div style={loaderTextStyle}>
+    We are going to go live soon, till then check out our home page!
+    </div>
     </div>
 }
 
