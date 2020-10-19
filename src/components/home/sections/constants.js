@@ -5,10 +5,10 @@ import SDG1Grey from '../../../images/SDG1-greyscale.jpg';
 import SDG2Grey from '../../../images/SDG2-greyscale.jpg';
 import SDG3Grey from '../../../images/SDG3-greyscale.jpg';
 
-import Godan from '../../../images/Godan.jpeg';
-import WhatIReallyReallyWant from '../../../images/WhatIReallyReallyWant.jpg';
-import LetsTalk from '../../../images/LetsTalk.jpg';
-import End7 from '../../../images/End7.jpeg';
+import Godan from '../../../images/Godan.png';
+import WhatIReallyReallyWant from '../../../images/WhatIReallyWant.png';
+import LetsTalk from '../../../images/LetsTalk.png';
+import End7 from '../../../images/Case Study End 7.png';
 
 
 export const SDGs = [

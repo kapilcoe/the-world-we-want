@@ -22,6 +22,20 @@ export const imagetiltright = () => {
     });
 }
 
+export const headerscrolled = () => {
+  window.addEventListener('scroll', function(){
+    var scroll = window.scrollY;
+      if(scroll > 800) {
+          document.querySelector(".header-container").classList.add("scrolled");
+      } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          document.querySelector(".header-container").classList.remove("scrolled");
+      }
+  }
+  )
+}
+
+
 export const scrollscreenshow = () => {
     // Detect request animation frame
     var scroll = window.requestAnimationFrame ||

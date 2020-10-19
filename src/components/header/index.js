@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import './header.css';
 import LogoLight from '../../images/horizontal-logo-light.png';
@@ -8,7 +8,7 @@ import TwitterIcon from '../../images/icons/twitter.png';
 import HamburgerIcon from '../../images/icons/hamburger.png';
 import HamburgerClosedIcon from '../../images/icons/hamburger-closed.png';
 import DownArrowIcon from '../../images/icons/down-triangle.png';
-
+import {headerscrolled} from '../../utils';
 
 
 const Header = ({sideMenuHeader, setShowSideMenu}) => {
@@ -21,8 +21,8 @@ const Header = ({sideMenuHeader, setShowSideMenu}) => {
                 </animated.div>
 
                 <ul className="nav-area">
-                    <Logo href='https://www.instagram.com/the_worldwewant/?hl=en' icon={FacebookIcon}/>
-                    <Logo href='https://www.facebook.com/www.theworldwewant/' icon={InstagramIcon}/>
+                    <Logo href='https://www.facebook.com/www.theworldwewant/' icon={FacebookIcon}/>
+                    <Logo href='https://www.instagram.com/the_worldwewant/?hl=en' icon={InstagramIcon}/>
                     <Logo href='https://twitter.com/The_WorldWeWant' icon={TwitterIcon}/>
                     {/* <li onClick={() => {setShowSideMenu(sideMenuHeader ? false: true )}} class='burger'><a target='_blank'><img src={sideMenuHeader ? HamburgerClosedIcon : HamburgerIcon}/></a></li> */}
                 </ul>
@@ -101,6 +101,9 @@ const SidMenuItem = ({data}) => {
 
 export default () => {
     const [showSideMenu, setShowSideMenu] = useState(false);
+    useEffect(() => {
+        headerscrolled();
+    }, []);
     return <>
         <Header setShowSideMenu={setShowSideMenu}/>
         <SideMenu show={showSideMenu} setShowSideMenu={setShowSideMenu}/>
