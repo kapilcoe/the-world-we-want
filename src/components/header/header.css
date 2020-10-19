@@ -88,3 +88,10 @@
     text-decoration: none;
     color: #FFF;
 }
+
+.scrolled{
+    background:#191919;
+    margin-top:0;
+    transition: ease-in-out;
+    transition-delay: .35ms;
+}
