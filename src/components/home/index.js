@@ -14,7 +14,7 @@ export default ({}) => {
     return <div className="home-container">
             <HeroBanner/>
             <GlobalImpact/>
-            <GoodNews/>
+            {/* <GoodNews/> */}
             <SDGs/>
             <OurWork/>
             <PurposeImpact/>
