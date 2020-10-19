@@ -44,7 +44,8 @@ export const OUR_WORK = [
     {
         src: WhatIReallyReallyWant,
         title1: '#WHAT I',
-        title2: 'REALLY REALLY WANT',
+        title2: 'REALLY REALLY',
+        title3: 'WANT',
         descripton: 'Breaking the internet for Girl Power with the #WhatIReallyReallyWant video sensation '
     },
     {

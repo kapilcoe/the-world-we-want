@@ -30,6 +30,9 @@ const Work = ({work}) => {
                                 work.title1 && <div className='work-title-1'>{work.title1}</div>
                             }
                             <div className='work-title-2 '>{work.title2}</div>
+                            {
+                                work.title1 && <div className='work-title-3'>{work.title3}</div>
+                            }
                             <div className='work-description'>{work.descripton}</div>
                             </div>
                 
