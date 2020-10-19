@@ -13,7 +13,7 @@ export default ({}) => {
     const [loaded, setIsLoaded] = useState(false);
     console.log({loaded});
     const loadingProps = useSpring({
-        opacity: loaded ? 1: 0
+        // opacity: loaded ? 1: 0
     }, [loaded]);
 
     const onHoverBlurredSDG = sdg => {
