@@ -13,7 +13,7 @@ export default ({}) => {
             </div>
             <div className="r-footer">
                 <div className="r-footer-title">Find us here</div>
-                <p>20-23 Astwood Mews <br/>London <br/>SW7 4DE</p>
+                <p>20-21 Astwood Mews <br/>London <br/>SW7 4DE</p>
                 
             </div>
             <div className="social-footer">
