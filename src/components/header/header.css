@@ -55,6 +55,7 @@
     right: -100vw;
     top: 0px;
     overflow-y: scroll;
+    display: none;
 }
 
 .side-menu-items-container {
