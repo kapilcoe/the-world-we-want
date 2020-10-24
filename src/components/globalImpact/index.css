@@ -5,7 +5,7 @@
     background-image: url('../../images/GlobalImpactGreyscale.png');
     width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     padding-left: 140px;
     padding-top: 268px;
@@ -34,12 +34,13 @@
 .title-3 {
     font-family: 'Tusker-5700';
     font-size: 200px;
-    padding-bottom: 150px;
+    padding-bottom: 9%;
 }
 
 .global-impact .section {
     padding-top: 100px;
-    padding-left: 150px;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
 .global-impact .section .section-title {

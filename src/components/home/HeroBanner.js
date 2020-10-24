@@ -12,7 +12,8 @@ export default ({}) => {
     useEffect(() => {
         document.getElementById('banner-video').play();
         document.body.addEventListener('click', () => {
-            document.getElementById('banner-video').muted = false;
+            const vidEl = document.getElementById('banner-video');
+            vidEl && (vidEl.muted = false);
         });
     }, []);
     const props = useSpring({from: {opacity: 0}, opacity: 1});
