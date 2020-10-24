@@ -10,7 +10,9 @@ import GlobalImpact from './components/globalImpact';
 import SDGs from './components/sdgs';
 import OurWork from './components/ourwork';
 import SocialMedia from './components/socialmedia';
-
+import Accelerators from './components/accelerators';
+import FounderInsight from './components/founderinsight'
+import AcceleratorPopculture from './components/accelerator-popculture'
 function App() {
   return (
     <div className="App">
@@ -29,6 +31,15 @@ function App() {
           </Route>
           <Route exact path='/purposeimpact'>
             <GlobalImpact/>
+          </Route>
+          <Route exact path='/accelerators'>
+            <Accelerators/>
+          </Route>
+          <Route exact path='/founder-insight'>
+            <FounderInsight/>
+          </Route>
+          <Route exact path='/accelerator-popculture'>
+            <AcceleratorPopculture/>
           </Route>
           <Route exact path='/socialmedia'>
             <SocialMedia/>
