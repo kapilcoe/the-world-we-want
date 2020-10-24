@@ -4,7 +4,6 @@
     z-index: -1;
     bottom: 0;
 } */
-
 .footer {
     display: flex;
     flex-flow: row wrap;
