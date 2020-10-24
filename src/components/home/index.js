@@ -15,9 +15,9 @@ export default ({}) => {
             <HeroBanner/>
             <GlobalImpact/>
             <SDGs/>
-            <WhatWeDo/>
             <OurWork/>
             <PurposeImpact/>
+            <WhatWeDo/>
             <WorldWeWant/>
             <GoodNews/>
             

@@ -19,7 +19,7 @@ export default ({}) => {
     return <NavLink 
                 to={'/impact'}
                 exact>
-                    <SectionsLoader callback={setIsLoaded}><animated.div  className='global-impact-container'>
+                    <div  className='global-impact-container'>
                     <div className='title'>
                         <div className="home-intro__heading"><span className="l show-on-scroll">A</span> <span className="c show-on-scroll">GLOBAL SOCIAL</span> <span className="r show-on-scroll"></span></div>
                         {
@@ -32,7 +32,6 @@ export default ({}) => {
                         <div className='para'>To accelerate the achievement of the United Nations’ Sustainable Development Goals by 2030, through positive action, strategic communication and global connections, creating powerful and sustained social impact.</div>
                         <div className='para'>We use the power of purpose, the strength of multi-stakeholder collaborations, our own proprietary initiatives and creative storytelling and strategies to shape policies and priorities and to mobilise action.</div>
                     </div>
-                </animated.div>
-                </SectionsLoader>
+                </div>
         </NavLink>
 }

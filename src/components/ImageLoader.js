@@ -187,7 +187,7 @@ ZImage.Shimmer = styled.div`
   background-image: linear-gradient(
     to right,
     #F8F8F8 0%,
-    #FFF 10%,
+    #F5F5F5 10%,
     #F8F8F8 40%,
     #F8F8F8 100%
   );

@@ -33,7 +33,7 @@ All sections are part of home component hence css for all sections is inside hom
 /* Global Impact Section */
 
 .global-impact-container {
-    margin: 2rem 5rem 2rem 5rem;
+    padding: 4.5% 7.8%;
     color: #181818;
 
 }
@@ -42,22 +42,24 @@ All sections are part of home component hence css for all sections is inside hom
     font-size: 150px;
     font-family: 'Tusker-5700';
     line-height: 250px;
+    text-align: left;
     letter-spacing: 0px;
+    color: #181818;
+    text-transform: uppercase;
 
 }
 
 .global-impact-container .title .impact {
     font-size: 250px;
-    font-family: 'Tusker-7700';
     line-height: 250px;
+    font-family: 'Tusker-7700';
     letter-spacing: 0px;
-    opacity: 0;
-
+    color: #181818;
+    text-transform: uppercase;
 }
 
 .global-impact-container .subtitle {
-    margin-top: 80px;
-    margin-right: 100px;
+    margin-top: 133px;
     font-family: 'URW-DIN-LIGHT';
     font-weight: normal;
     font-size: 48px;
@@ -363,7 +365,7 @@ transform: scale(1.5);
 } */
 .news-img{
     /* width: 100%; */
-    background: #fff;
+    background: #F5F5F5;
     -webkit-transition: all 0.2s ease;
      transition: all 0.2s ease;
     backface-visibility:hidden;
@@ -407,13 +409,13 @@ transform: scale(1.5);
 
 /* What We Do Section CSS Start */
 .whatwedo-section-container{
-    margin: 10rem 5rem 2rem 5rem;
+    padding: 12% 9%;
 }
 
 .whatwedo-section-container .title {
     font-family: 'Tusker-5500';
     font-size: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 71px;
     opacity: 0;
     transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
     transform: translateY(50%);
@@ -427,10 +429,9 @@ transform: scale(1.5);
     transform: none;
 }
 .whatwedo-section-container .description {
-    font-family: 'URW-WIN-LIGHT';
+    font-family: 'URW-DIN-LIGHT';
     font-size: 48px;
-    margin-right: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 71px;
     opacity: 0;
     transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
     transform: translateY(50%);
@@ -446,12 +447,12 @@ transform: scale(1.5);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    gap: 30px;
     justify-content: space-between;
     position: relative;
 }
 .whatwedo-area{
-    width: 47%;
+    width: calc(50% - 15px);
     transform-style: preserve-3d;
     transition: opacity 800ms ease-in-out ,transform 1200ms ease-in-out;
     opacity: 0;
@@ -509,7 +510,7 @@ transform: scale(1.5);
     padding: 30px 10px;
     font-size: 60px;
     font-family: 'Tusker-5700';
-    color: #FFF;
+    color: #F5F5F5;
     position: relative;
     top: -3px;
     transform-style: preserve-3d;
@@ -523,7 +524,7 @@ transform: scale(1.5);
     padding: 17rem 5rem 2rem 5rem;
     background-image: url('../../images/purpose_impact.png');
     font-family: 'Tusker-5500';
-    color: #FFF;
+    color: #F5F5F5;
     position: relative;
     line-height: 110px;
     letter-spacing: 0px;
@@ -543,7 +544,7 @@ transform: scale(1.5);
 }
 .purpose-impact-container .pie-container {
     position: absolute;
-    background-color: #FFF;
+    background-color: #F5F5F5;
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -567,13 +568,13 @@ transform: scale(1.5);
 
 /* 17 SDGs */
 .sdgs-container {
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 7% 7.8%;
     background-color: #181818;
 }
 
 .sdgs-container .title {
-    margin-bottom: 5rem;
-    color: #fff;
+    margin-bottom: 100px;
+    color: #F5F5F5;
     font-size: 90px;
     line-height: 100px;
     letter-spacing: 0px;
@@ -582,8 +583,8 @@ transform: scale(1.5);
 }
 
 .sdgs-container .subtitle {
-    margin-bottom: 5rem;
-    color: #fff;
+    margin-bottom: 100px;
+    color: #F5F5F5;
     font-size: 30px;
     font-family: 'URW-DIN-LIGHT';
     line-height: 30px;
@@ -618,14 +619,14 @@ transform: scale(1.5);
     font-size: 70px;
     line-height: 80px;
     letter-spacing: 0px;
-    color: #FFF;
+    color: #F5F5F5;
     font-family: 'Tusker-5500';
     padding-top: 15px;
     letter-spacing: 0px;
 }
 
 .focused-sdg .description {
-    color: #FFF;
+    color: #F5F5F5;
     line-height: 28px;
     padding-top: 10px;
     font-size: 24px;
@@ -650,7 +651,7 @@ transform: scale(1.5);
     height: 90px;
     font-size: 24px;
     line-height: 28px;
-    color: #FFF;
+    color: #F5F5F5;
     padding-top: 10px;
     font-family: 'URW-DIN-MEDIUM';
 }
@@ -660,7 +661,7 @@ transform: scale(1.5);
 
 /* our work css start */
 .our-work {
-    margin: 6rem 5rem 12rem 5rem;
+    padding: 13% 7.8%;
 }
 
 .our-work .title {
@@ -672,8 +673,8 @@ transform: scale(1.5);
 
 .our-work-tiles .tile {
     position: relative;
-    margin-bottom: 4rem;
-    color: #FFF;
+    margin-bottom: 9.3%;
+    color: #F5F5F5;
 
 }
 
@@ -686,6 +687,8 @@ transform: scale(1.5);
     opacity: 0;
     /* transform: translateX(-50%); */
 }
+
+
 .our-work-tiles .tile.is-visible img {
     opacity: 1;
     /* transform:translateX(0) */
@@ -694,8 +697,8 @@ transform: scale(1.5);
 
 .our-work-tiles .tile .tile-text {
     position: absolute;
-    bottom: 35px;
-    margin-left: 20px;
+    bottom: 47px;
+    margin-left: 29px;
     opacity: 0;
     transition: opacity 400ms ease-in-out ,transform .5s cubic-bezier(.19,1,.22,1);
     transform: translateY(50%);
@@ -717,7 +720,6 @@ transform: scale(1.5);
 .our-work-tiles .tile .work-title-2 {
     font-family: 'Tusker-7700';
     font-size: 120px;
-    margin-bottom: 15px;
     font-weight: bolder;
     max-width: 1200px;
     line-height: 125px;
@@ -728,7 +730,6 @@ transform: scale(1.5);
 .our-work-tiles .tile .work-title-3 {
     font-family: 'Tusker-5700';
     font-size: 120px;
-    margin-bottom: 15px;
     font-weight: bolder;
     max-width: 1200px;
     line-height: 125px;
@@ -740,7 +741,7 @@ transform: scale(1.5);
     max-width: 600px;
     font-family: 'URW-DIN-REGULAR';
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-top: 40px;
     line-height: 28px;
     letter-spacing: 0px;
 }
@@ -754,7 +755,7 @@ transform: scale(1.5);
     background-image: linear-gradient(159deg, #0a2096 0%, #09088e 17%, #dc3e25 40%, #059427 60%, #d4d23c 75%, #9a0c8b 90%);
     border-radius: 30%;
     transition: 0.5s all;
-    color: #fff;
+    color: #F5F5F5;
 
 }
 
@@ -910,7 +911,7 @@ transform: scale(1.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF;
+    color: #F5F5F5;
   }
 
   .spinning-wheel {

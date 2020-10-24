@@ -8,7 +8,7 @@
     display: flex;
     flex-flow: row wrap;
 /* padding: 50px; */
-    color: #fff;
+    color: #F5F5F5;
     padding: 150px 0px 50px 150px;
     background-color: #181818;
 }
@@ -104,7 +104,7 @@ column-gap: 1.25em;
 .l-footer p {
     font-family: 'URW-DIN-LIGHT';
     font-size: 36px;
-    color: #fff;
+    color: #F5F5F5;
     line-height: 28px;
     letter-spacing: 0px;
     margin-bottom: 10px;
@@ -113,7 +113,7 @@ column-gap: 1.25em;
 .r-footer p {
     font-family: 'URW-DIN-LIGHT';
     font-size: 36px;
-    color: #fff;
+    color: #F5F5F5;
     line-height: 38px;
     letter-spacing: 0px;
 }   
@@ -186,7 +186,7 @@ column-gap: 1.25em;
     border-radius: 30px;
     background-color: #000000;
     border: 3px solid #f86445;
-    color: #FFFFFF;
+    color: #F5F5F5FFF;
     text-align: center;
     font-size: 16px;
     padding: 4px;
@@ -200,7 +200,7 @@ column-gap: 1.25em;
   .subscribe-form .button:hover { 
     border: 3px solid #f86445;
     background-color: #f86445;
-    color: #FFF;
+    color: #F5F5F5;
   }
 
 
@@ -232,7 +232,7 @@ flex: 0.3 0px;
     line-height: 28px;
     letter-spacing: 0px;
     background-color: #292929;
-    color: #FFF;
+    color: #F5F5F5;
     padding-left: 150px;
     border-top: 1px solid grey;
 }

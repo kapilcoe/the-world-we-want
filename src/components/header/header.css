@@ -11,6 +11,10 @@
 
 .logo{
     margin-right: auto;
+
+}
+.logo img {
+    padding-left: 11%;
 }
 .nav-area{
     justify-content: space-around;
@@ -28,7 +32,7 @@
 .nav-area li a {
     text-decoration: none;
     font-size: 16px;
-    color: #ffffff;
+    color: #F5F5F5fff;
   }
 
 .nav-area li a img{
@@ -62,7 +66,7 @@
     font-size: 80px;
     font-family: 'Tusker-7700';
     line-height: 110%;
-    color: #FFF;
+    color: #F5F5F5;
     margin-top: 100px;
     margin-left: 100px;
 }
@@ -80,14 +84,14 @@
     font-size: 50px;
     font-family: 'Tusker-5700';
     line-height: 110%;
-    color: #FFF;
+    color: #F5F5F5;
     margin-top: 50px;
     margin-left: 50px;
 }
 
 .side-menu-item a, a:visited {
     text-decoration: none;
-    color: #FFF;
+    color: #F5F5F5;
 }
 
 .scrolled{
