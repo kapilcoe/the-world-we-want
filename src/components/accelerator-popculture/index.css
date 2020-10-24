@@ -1,0 +1,166 @@
+.popculture-background-image {
+    background-image: url('../../images/accelerator-popculture.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding-left: 140px;
+    padding-top: 268px;
+}
+
+.popculture .title {
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #F5F5F5;
+    text-shadow: 3px 3px 3px #5D5DEC;
+    text-transform: uppercase;
+    opacity: 1;
+    line-height: 180px;
+}
+.title-1 {
+    font-size: 170px;
+    font-family: 'Tusker-7700';
+
+}
+
+.title-1 span::before  {
+    content: "\A";
+    white-space: pre;
+}
+  
+
+.title-2 {
+    font-family: 'Tusker-7700';
+    font-size: 180px;
+}
+.title-description {
+    font-family: 'URW-DIN-REGULAR';
+    font-size: 32px;
+    line-height: 36px;
+    color: #F5F5F5;
+    text-align: left;
+    width: 779px;
+}
+.title-description span{
+    display: inline-block;
+    margin: 28px 0;
+}
+
+
+
+.founder-insight .section {
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+.founder-insight .section .section-title {
+    font-family: 'Tusker-5500';
+    text-align: left;
+    letter-spacing: 0px;
+    color: #181818;
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 90px;
+}
+
+.columns1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 65px;
+}
+.columns2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 65px;
+}
+.columns3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 65px;
+}
+
+.p {
+    margin-bottom: 50px;
+}
+
+.yellow {
+    background-color: #F2C641;
+}
+.row {
+    
+}
+
+.bold1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Tusker-5500';
+    font-size: 150px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #181818;
+    text-transform: uppercase;
+    line-height: 220px;
+    margin-top: 68px;
+}
+
+.bold2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Tusker-7700';
+    font-size: 200px;
+    letter-spacing: 0px;
+    color: #181818;
+    text-transform: uppercase;
+    line-height: 220px;
+}
+
+.bold3 {
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    line-height: 150px;
+    font-family: 'Tusker-5700';
+    font-weight: bold;
+    margin-top: 70px;
+    letter-spacing: 0px;
+    color: #181818;
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center;
+
+}
+.bold4 {
+    display: flex;
+    justify-content: center;
+    font-size: 250px;
+    line-height: 250px;
+    font-family: 'Tusker-7700';
+    font-weight: bold;
+    margin-top: 70px;
+    letter-spacing: 0px;
+    color: #181818;
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center;
+
+}
+
+.rows {
+    margin-top: 200px;
+    padding-bottom: 100px;
+}
+
+.row {
+    padding-bottom: 50px;
+    text-align: left;
+    font-family: 'URW-DIN-LIGHT';
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: #181818;
+    opacity: 1;
+}
