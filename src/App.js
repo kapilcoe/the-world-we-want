@@ -10,6 +10,7 @@ import GlobalImpact from './components/globalImpact';
 import SDGs from './components/sdgs';
 import OurWork from './components/ourwork';
 import SocialMedia from './components/socialmedia';
+import Accelerators from './components/accelerators';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route exact path='/purposeimpact'>
             <GlobalImpact/>
+          </Route>
+          <Route exact path='/accelerators'>
+            <Accelerators/>
           </Route>
           <Route exact path='/socialmedia'>
             <SocialMedia/>
