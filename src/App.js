@@ -7,6 +7,9 @@ import Footer from './components/footer';
 import PageLoader from './components/PageLoader';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import GlobalImpact from './components/globalImpact';
+import SDGs from './components/sdgs';
+import OurWork from './components/ourwork';
+import SocialMedia from './components/socialmedia';
 
 function App() {
   return (
@@ -17,6 +20,18 @@ function App() {
         <Switch>
           <Route exact path='/impact'>
             <GlobalImpact/>
+          </Route>
+          <Route exact path='/sdgs'>
+            <SDGs/>
+          </Route>
+          <Route exact path='/ourwork'>
+            <OurWork/>
+          </Route>
+          <Route exact path='/purposeimpact'>
+            <GlobalImpact/>
+          </Route>
+          <Route exact path='/socialmedia'>
+            <SocialMedia/>
           </Route>
           <Route path='/'>
             <Home/>

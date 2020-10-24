@@ -6,13 +6,17 @@ import socialimg4 from '../../../images/post4.jpeg';
 import socialimg5 from '../../../images/post5.jpeg';
 import socialimg6 from '../../../images/post6.mp4';
 import {scrollscreenshow} from '../../../utils';
+import NavLink from '../../NavLink';
 
 export default ({}) => {
     useEffect(() => {
         scrollscreenshow();
         document.getElementById('social-video').play();
     }, []);
-    return <div className="world-wewant-container">
+    return <NavLink 
+        to={'/socialmedia'}
+        exact>  
+    <div className="world-wewant-container">
                 <div className="world-title show-on-scroll">#THEWORLDWEWANT</div>
                 <div className="world-description show-on-scroll">Engage with us and be a part of our journey</div>
                 <div className="social-post-container">
@@ -39,4 +43,5 @@ export default ({}) => {
                 
                 </div>
             </div>
+            </NavLink>
 }

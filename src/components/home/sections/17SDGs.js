@@ -3,6 +3,7 @@ import {useSpring, animated} from 'react-spring';
 import {SDGs} from './constants';
 import ImageLoader from '../../ImageLoader';
 import SectionsLoader from '../../SectionsLoader';
+import NavLink from '../../NavLink';
 
 export default ({}) => {
     const [selectedSDG, setSelectedSDG] = useState(0);
@@ -21,7 +22,10 @@ export default ({}) => {
         setSelectedSDG(hoveredSDGIndex);
     };
     console.log('rendering 17 SDGs');
-    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  class='sdgs-container'>
+    return <NavLink 
+        to={'/sdgs'}
+        exact>
+    <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  class='sdgs-container'>
         <div className='title'>
             THE 17 SDGS
         </div>
@@ -53,6 +57,7 @@ export default ({}) => {
 
     </animated.div>
     </SectionsLoader>
+    </NavLink>
 }
 
 const FocusedSDG = ({sdg }) => {

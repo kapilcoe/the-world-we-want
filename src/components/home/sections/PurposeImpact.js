@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import {useSpring, animated} from 'react-spring';
 import SectionsLoader from '../../SectionsLoader';
 import PurposeImage from '../../../images/pi_White-01.png';
-
+import NavLink from '../../NavLink';
 
 export default ({}) => {
     const [loaded, setIsLoaded] = useState(false);
     const loadingProps = useSpring({
         opacity: loaded ? 1: 0
     }, [loaded]);
-    return <SectionsLoader threshold = {0.4} callback={setIsLoaded}><animated.div  className='purpose-impact-container'>
+    return <NavLink 
+                to={'/purposeimpact'}
+                exact><SectionsLoader threshold = {0.4} callback={setIsLoaded}><animated.div  className='purpose-impact-container'>
         <div className='title'>
            <img className="purpose-img" src={PurposeImage}></img>
         </div>
@@ -20,4 +22,5 @@ export default ({}) => {
          {/* <div className='pie-container'></div> */}
     </animated.div>
     </SectionsLoader>
+    </NavLink>
 }

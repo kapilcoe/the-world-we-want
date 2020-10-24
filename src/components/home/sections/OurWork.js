@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {useSpring, animated} from 'react-spring';
 import { OUR_WORK, SDGs } from './constants';
 import SectionsLoader from '../../SectionsLoader';
+import NavLink from '../../NavLink';
 
 export default ({}) => {
 
@@ -23,7 +24,10 @@ const Work = ({work}) => {
         opacity: loaded ? 1: 0
     }, [loaded]);
 
-    return <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  className='tile show-on-scroll'>
+    return <NavLink 
+                to={'/ourwork'}
+                exact>             
+                    <SectionsLoader threshold = {0.2} callback={setIsLoaded}><animated.div  className='tile show-on-scroll'>
                                         <img height='600px' src={work.src}/>
                             <div className='tile-text show-on-scroll'>
                             {
@@ -38,4 +42,5 @@ const Work = ({work}) => {
                 
         </animated.div>
         </SectionsLoader>
+        </NavLink>
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SectionsLoader from '../../SectionsLoader';
 import {animated, useSpring} from 'react-spring';
 import {useInterval} from '../../../utils';
-import { NavLink } from 'react-router-dom';
+import NavLink from '../../NavLink';
 
 export default ({}) => {
     const [loaded, setIsLoaded] = useState(false);
