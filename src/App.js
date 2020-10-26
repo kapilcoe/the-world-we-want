@@ -13,6 +13,9 @@ import SocialMedia from './components/socialmedia';
 import Accelerators from './components/accelerators';
 import FounderInsight from './components/founderinsight'
 import AcceleratorPopculture from './components/accelerator-popculture'
+import AcceleratorPowerPeople from './components/accelerator-pwrpeople'
+import AcceleratorSDGx  from './components/accelerator-sdgx'
+import AcceleratorTashan from './components/accelerator-tashan'
 function App() {
   return (
     <div className="App">
@@ -40,6 +43,15 @@ function App() {
           </Route>
           <Route exact path='/accelerator-popculture'>
             <AcceleratorPopculture/>
+          </Route>
+          <Route exact path='/accelerator-power-to-people'>
+            <AcceleratorPowerPeople/>
+          </Route>
+          <Route exact path='/accelerator-sdgx'>
+            <AcceleratorSDGx/>
+          </Route>
+          <Route exact path='/accelerator-tashan'>
+            <AcceleratorTashan/>
           </Route>
           <Route exact path='/socialmedia'>
             <SocialMedia/>

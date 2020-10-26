@@ -1,0 +1,71 @@
+.tashan-background-image {
+    background-image: url('../../images/edwin-andrade-4V1dC_eoCwg-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 7.8%;
+    padding-right: 7.8%;
+    min-height: 1080px;
+    margin-bottom: 95.4px;
+
+  
+    /* display: grid;
+    gap: 40px; */
+}
+
+.tashan-title{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    line-height: 180px;
+    padding-top: 500px;
+}
+.tashan-title  .title-1 {
+    font-size: 170px;
+    font-family: 'Tusker-5500';
+    font-weight: bold;
+
+}
+
+.tashan-title .title-1 span::before  {
+    content: "\A";
+    white-space: pre;
+    font-family: 'Tusker-7700';
+}
+  
+.popculture-section{
+    padding-left: 7.8%;
+    padding-right: 7.8%;
+    padding-bottom: 339px;
+    display: grid;
+    grid-gap: 239px;
+    grid-template-columns: 1fr;
+}
+
+.popculture-detail {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.popculture-text .popculture-head{
+    font-family: 'URW-DIN-REGULAR';
+    font-size: 60px;
+    line-height: 56px;
+    text-align: left;
+    padding-top: 60px;
+}
+
+.popculture-text .popculture-description{
+    font-family: 'URW-DIN-LIGHT';
+    font-size: 32px;
+    line-height: 36px;
+    text-align: left;
+    padding-top: 47px;
+}
+.popculture-line{
+    border-top: 2px solid #181818;;
+}
+
+
+
